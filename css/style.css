@@ -1,0 +1,48 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+.menu ul {
+	list-style-type: none;
+    background: #eeeeee;
+    margin: 0;
+}
+.menu ul li{
+	display: inline-table;
+	height: 40px;
+	line-height: 40px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.menu ul li a{
+	display: block;
+	text-decoration: none;
+	color: #606060;
+}
+
+.banner {
+	background-color: white;
+	height: 200px;
+	background: url(logo/logo1.png);
+	background-repeat: no-repeat;
+	background-position: center;
+}
+.catalogue {
+	background-color: #eeeeee;
+}
+.catalogue ul {
+
+}
+.catalogue ul li {
+	display: inline-table;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 20px;
+
+}
+.catalogue ul li a {
+	display: block;
+	text-decoration: none;
+	color: #606060;
+}
