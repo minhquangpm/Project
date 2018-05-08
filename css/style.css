@@ -46,3 +46,12 @@
 	text-decoration: none;
 	color: #606060;
 }
+
+div.resize {
+	width: 60%;
+	margin: auto;
+}
+
+img {
+	width: 100%;
+}
