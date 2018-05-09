@@ -24,7 +24,7 @@
 .banner {
 	background-color: white;
 	height: 200px;
-	background: url(logo/logo1.png);
+	background: url(../logo/logo1.png);
 	background-repeat: no-repeat;
 	background-position: center;
 }
@@ -34,15 +34,36 @@
 .catalogue ul {
 
 }
-.catalogue ul li {
+.catalogue li {
 	display: inline-table;
 	height: 60px;
 	line-height: 60px;
-	padding: 0 20px;
-
+	position: relative;
 }
 .catalogue ul li a {
 	display: block;
 	text-decoration: none;
 	color: #606060;
+	padding: 0 20px;
+}
+.catalogue a:hover{
+	background: gray;
+	color: #333;
+}
+.manh123 {
+display: none;
+position: absolute;
+border: solid 1px gray;
+background: white;
+padding: 3px 0;
+width: 300px;
+}
+.catalogue{
+	position: relative;
+}
+.manh123 li{
+	display: block;
+}
+.catalogue li:hover .manh123{
+	display: block
 }
