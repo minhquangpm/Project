@@ -4,7 +4,7 @@
 }
 .menu ul {
 	list-style-type: none;
-    background: #eeeeee;
+    background: #606060;
     margin: 0;
 }
 .menu ul li{
@@ -18,7 +18,8 @@
 .menu ul li a{
 	display: block;
 	text-decoration: none;
-	color: #606060;
+	color: white;
+	text-transform: uppercase;
 }
 
 .banner {
@@ -29,7 +30,7 @@
 	background-position: center;
 }
 .catalogue {
-	background-color: #eeeeee;
+	background-color: #606060;
 }
 .catalogue ul {
 
@@ -43,6 +44,7 @@
 .catalogue ul li a {
 	display: block;
 	text-decoration: none;
+<<<<<<< HEAD
 	color: #606060;
 	padding: 0 20px;
 }
@@ -66,4 +68,96 @@ width: 300px;
 }
 .catalogue li:hover .manh123{
 	display: block
+=======
+	color: white;
+	text-transform: uppercase;
+}
+
+.re-font {
+	font-weight:  bold;
+	font-family: "Roboto", sans-serif;
+	font-size: 16px;
+}
+
+.ul-menu {
+	list-style-type: none;
+	list-style-position: inside;
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
+	padding: 10px;
+}
+
+.chosen-product {
+	color: red;
+}
+
+.ul-menu li a.sofa, a.tu, a.chieu {
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+	color: #4c4c4c;
+}
+
+.ul-menu li a:hover {
+	text-decoration: underline;
+	color: blue;
+}
+
+.ul-submenu {
+	display: none;
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+/*.ul-submenu li a {
+	font-size: 18px;
+}*/
+
+.menu-right img {
+	height: 190px;
+	width: 
+}
+
+
+img {
+	width: 100%;
+}
+
+h4 {
+	font-weight: 400;
+}
+
+.pull-left {
+	float: left;
+}
+
+.pull-right {
+	float: right;
+}
+
+.red {
+	color: red;
+}
+
+.product {
+	/*position: relative;*/
+}
+
+.product-detail {
+	border: 1px solid black;
+	background-color: white;
+	display: none;
+	list-style-type: none;
+	list-style-position: inside;
+	margin-top: 30px;
+	position: absolute;
+	z-index: 999;
+}
+
+marquee {
+	vertical-align: middle;
+	line-height: 60px;
+	font-size: 20px;
+	color: #bc2929;
+>>>>>>> 497e9058c4b65e34cc16a9d3786ce5cab041f6e0
 }
