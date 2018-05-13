@@ -109,7 +109,7 @@ body{
 }
 .fix-logo{
 	position: absolute;
-	z-index: 1
+	z-index: 1;
 }
 .logo a h1{
 	line-height: 40px;
@@ -155,7 +155,6 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-size: cover;
-	background-image: url(http://myamazingthings.com/wp-content/uploads/2017/10/home-decor-1.jpg);
 	height: 600px;
 
 }
@@ -168,14 +167,12 @@ body{
 .living-room{
 	background-image: url(../image/manh.jpg);
 	height: 500px;
-
 	background-size: cover;
 	background-position: center;
 }
 .bed-room{
 	background-image: url(../image/manh1.jpg);
 	height: 500px;
-
 	background-size: cover;
 	background-position: center;
 }
@@ -216,9 +213,10 @@ body{
     -o-transition: all 1s;
     transition: all 1s;
 }
-
+.bg-banner{
+	background-image: url(../image/manh5.jpg);
+}
 /* Several different images */
-.bg-one {background-image: url(../manh4.jpg);}
 
 .parent:hover .child, .parent:focus .child {
     -ms-transform: scale(1.05);
