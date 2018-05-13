@@ -173,7 +173,7 @@ body{
 	background-position: center;
 }
 .bed-room{
-	background-image: url(../image/manh1.jpeg);
+	background-image: url(../image/manh1.jpg);
 	height: 500px;
 
 	background-size: cover;
@@ -188,7 +188,6 @@ body{
 .dining-room{
 	background-image: url(../image/manh3.jpg);
 	height: 500px;
-
 	background-size: cover;
 	background-position: center;
 }
@@ -202,6 +201,8 @@ body{
 .parent {
     overflow: hidden;
     height: 500px;
+    position: relative;
+    cursor: pointer;
 }
 
 
@@ -245,4 +246,18 @@ body{
     left: 0;
     background-color: black;
     opacity: 0.3;
+}
+.text-banner {
+	display: block;
+    font-size: 35px;
+    color: #ffffff;
+    font-family: sans-serif;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 50px;
 }
