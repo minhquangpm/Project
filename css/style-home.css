@@ -6,6 +6,9 @@ body{
 	padding: 0;
 	margin: 0;
 }
+.row{
+	margin:0;
+}
 .container{
 	margin: auto;
 	max-width: 87.5rem;
@@ -158,22 +161,88 @@ body{
 }
 
 /*content*/
-.brand-show{
+.room-show{
 	background-color: white;
 }
-.card-banner{
-	padding: 10px 10px 10px 10px;
+
+.living-room{
+	background-image: url(../image/manh.jpg);
+	height: 500px;
+
+	background-size: cover;
+	background-position: center;
 }
-.name-brand{
-	position: absolute;
-	font-size: 22px;
-	z-index: 3;
-	font-weight: bold;	
-    white-space: nowrap; 
-    color: white;
+.bed-room{
+	background-image: url(../image/manh1.jpeg);
+	height: 500px;
+
+	background-size: cover;
+	background-position: center;
+}
+.office{
+	background-image: url(../image/manh2.jpg);
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+.dining-room{
+	background-image: url(../image/manh3.jpg);
+	height: 500px;
+
+	background-size: cover;
+	background-position: center;
+}
+.bathroom{
+	background-image: url(../image/manh4.jpg);
+	height: 500px;
+	background-size: cover;
+	background-position: center;
+}
+
+.parent {
     overflow: hidden;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
+    height: 500px;
+}
+
+
+.child {
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    -webkit-transition: all 1s;
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    transition: all 1s;
+}
+
+/* Several different images */
+.bg-one {background-image: url(../manh4.jpg);}
+
+.parent:hover .child, .parent:focus .child {
+    -ms-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -webkit-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+}
+
+.parent:hover .child:before, .parent:focus .child:before {
+    display: block;
+}
+
+.parent:hover a, .parent:focus a {
+    display: block;
+}
+
+.child:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
 }
