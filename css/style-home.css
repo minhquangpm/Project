@@ -259,3 +259,15 @@ body{
     right: 0;
     height: 50px;
 }
+    100% {opacity:1;}
+}
+.manhdaica{	
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    opacity: 0.3;
+}
