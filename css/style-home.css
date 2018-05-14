@@ -134,7 +134,7 @@ body{
 	z-index: 101;
 }
 .nav-bar ul li >.drop-menu{
-	display: none;
+	display: none;	
 	width: 250px;
 }
 .nav-bar ul li:hover .drop-menu{
@@ -156,6 +156,7 @@ body{
 	background-attachment: fixed;
 	background-size: cover;
 	height: 600px;
+	position: relative;
 
 }
 
@@ -259,6 +260,13 @@ body{
     right: 0;
     height: 50px;
 }
+.khung {
+	 animation: showup 7s;
+}
+
+@keyframes showup {
+    0% {opacity:0;}    
+    30% {opacity:1;}
     100% {opacity:1;}
 }
 .manhdaica{	
