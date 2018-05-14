@@ -63,25 +63,37 @@
 		</div>					
 	</div>
 	<div class="content">
-		<div class="parallax">
-		</div>
 	<div class="container">
 		<div class="row">
 			<div class="col-lg-8" class="ss2">
-				<div>
-					<img style="width: 850px;height: 800px; margin-bottom: 15px;" src="image/JAMIL(1).jpg">
-				</div>
-				<div class="row container">
-					<div >
-						<img class="amh" src="image/JAMIL(2).jpg">			
-					</div>
-					<div >
-						<img class="amh" src="image/JAMIL(3).jpg">			
-					</div>
-					<div >
-						<img class="amh" src="image/JAMIL(4).jpg">			
-					</div>
-				</div>
+				<div class=" ss4">
+  				<span onclick="this.parentElement.style.display=block'" class="closebtn">&times;</span>
+  				<img id="expandedImg"  src="image/JAMIL(1).jpg" style="width:100%">
+  				<div id="imgtext"></div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			    <img  src="image/JAMIL(4).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/JAMIL(3).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/JAMIL(1).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/JAMIL(2).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			</div>
+			<script>
+			function myFunction(imgs) {
+			    var expandImg = document.getElementById("expandedImg");
+			    var imgText = document.getElementById("imgtext");
+			    expandImg.src = imgs.src;
+			    imgText.innerHTML = imgs.alt;
+			    expandImg.parentElement.style.display = "block";
+			}
+			</script>
 			</div>
 		<div class="col-lg-4">
 				<h3 class="ss1">Sofa da góc L-JAMIL</h3>
@@ -152,28 +164,28 @@
       <a href="Trio.html">
       <img src="image/TRIO(4).jpg" class="img-responsive" style="width:90%" alt="Image">
       </a>
-      <p>Bạn đang xem:Sofa da TRIO</p>
+      <p>Sofa da TRIO</p>
       <strong style="color: red">68.100.000đ</strong>
     </div>
     <div  class="sptt"> 
       <a href="Jamil.html">
       <img src="image/MILANA(1).jpg" class="img-responsive" style="width:90%" alt="Image">
       </a>
-      <p>Bạn đang xem:Sofa băng MilanA</p>
+      <p>Sofa băng MilanA</p>
       <strong style="color: red">42.000.000đ</strong>
     </div>
    <div class="sptt"> 
       <a href="Pisa.html">
       <img src="image/Pisa(1).jpg" class="img-responsive" style="width:90%" alt="Image">
       </a>
-      <p>Bạn đang xem:Sofa băng da Pisa</p>
+      <p>Sofa băng da Pisa</p>
       <strong style="color: red">25.190.000đ</strong>
     </div>
     <div class="sptt">
       <a href="NTX1826.html"> 
       <img src="image/NTX1826.jpg" class="img-responsive" style="width:90%" alt="Image">
       </a>
-      <p>Bạn đang xem:Sofa da NTX1826</p>
+      <p>Sofa da NTX1826</p>
       <strong style="color: red">39.499.000đ</strong>  
     </div>
   </div>
