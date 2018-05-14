@@ -143,6 +143,8 @@ body{
 	text-align: left;
 	padding-left: 20px;
 	border: solid 1px #999999;
+	z-index: 1000;
+	animation: showup 2s;
 }
 .nav-bar ul.sub-menu li ul.drop-menu li{
 	display: list-item;
