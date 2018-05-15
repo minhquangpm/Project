@@ -1,5 +1,5 @@
 body{
-	font-size: 18px;
+	font-size: 16px;
 	background: #eeeeee;
 }
 *{
@@ -63,7 +63,7 @@ body{
 .logo.hide{
 	position: fixed;
 	margin: 0;
-	left: 30px;
+	left: 20px;
 }
 .sticky {
 	position: fixed;
@@ -94,12 +94,12 @@ body{
 	display: block;
 	text-decoration: none;
 	color: #333;	
-	padding: 0 20px;
+	padding: 0 10px;
 }
 .nav-bar a.catalogue:hover {
 	background: #eeeeee;
 	color: #d41f36;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 .logo a {
 	display: block;
