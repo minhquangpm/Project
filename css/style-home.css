@@ -14,6 +14,7 @@ body{
 	max-width: 87.5rem;
 	width: 100%;
 }
+                        /*header*/
 .bag-item {
 	float: right;
 }
@@ -203,7 +204,6 @@ body{
 .bg-banner{
 	background-image: url(../image/manh5.jpg);
 }
-/* Several different images */
 
 .parent:hover .child, .parent:focus .child {
     -ms-transform: scale(1.05);
