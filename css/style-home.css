@@ -77,7 +77,7 @@ body{
 	line-height: 60px;
 	height: 60px;
 }
-.sub-menu {
+.nav-bar ul {
 	list-style-type: none;
 	background: #fff;
 	margin: 0;	
@@ -86,15 +86,14 @@ body{
 	text-align: center;
 	box-shadow: 0px 2px 2px rgba(0,0,0,0.5);
 }
-.sub-menu li {
+.nav-bar ul.sub-menu li {
 	display: inline-table;
 	position: relative;
-}
-.sub-menu li a{
+
+}.nav-bar ul.sub-menu li a{
 	display: block;
 	text-decoration: none;
-	color: #333;
-	font-size: 16px;	
+	color: #333;	
 	padding: 0 20px;
 }
 .nav-bar a.catalogue:hover {
@@ -119,21 +118,22 @@ body{
 .nav-bar ul li >.drop-menu{
 	display: none;	
 	width: 250px;
+	background: #eeeeee;
+	height: auto;
 }
 .nav-bar ul li:hover .drop-menu{
 	display: block;
 	position: absolute;
-	background:#eeeeee;
 	text-align: left;
 	padding-left: 20px;
-	border: solid 1px #999999;
 	z-index: 1000;
+	border: solid 1px #999999;
 	animation: showup 2s;
 }
-.sub-menu li ul.drop-menu li{
+.nav-bar ul.sub-menu li ul.drop-menu li{
 	display: list-item;
 }
-.sub-menu li ul.drop-menu li a:hover{
+.nav-bar ul.sub-menu li ul.drop-menu li a:hover{
 	color: #d41f36;
 }
 .parallax{
