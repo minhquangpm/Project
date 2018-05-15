@@ -9,30 +9,17 @@
 </head>
 <body>
 	<div>
-		<div class="menu container">
-			<div class="sidebar-left">
-				<ul>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Find a store</a></li>							
-				</ul>
-			</div>			
-			<div class="bag-item">
+		<div class="banner">
+			<div class="logo show">
+				<a href="home.html">SWEETHOME</a>				
+			</div>
+			<div class="bag-item show-bag">
 				<a href="">
 					<i class="fa fa-shopping-bag"></i>
 				</a>
 			</div>
 		</div>
-		<div class="banner">
-			<div class="logo-banner">
-				<a href="home.html">
-					<h1>SWEETHOME</h1>
-				</a>				
-			</div>
-		</div>
 		<div class="nav-bar">
-			<div class="logo">
-				<a href=""><h1>SWEETHOME</h1></a>
-			</div>
 			<ul class="sub-menu">
 				<li>
 					<a class="catalogue" href=""><i class="fa fa-star"></i>BRANDS</a>
@@ -65,6 +52,9 @@
 		<div class="manhdaica">
 		</div>
 			<div class="text-banner khung">Sofa sieu khung khiep</div>
+	</div>
+	<div class="">
+		
 	</div>
 	<div class="content">
 		<div class="room-show">
@@ -117,13 +107,15 @@
             var stickyNav = function(){
             var scrollTop = $(window).scrollTop();
             	if (scrollTop > FixNavBar) {
+            		$('.sub-menu').addClass('fix-submenu');
             		$('.nav-bar').addClass('sticky');
-            		$('.logo').addClass('fix-logo');
+            		$('.logo').addClass('hide');
             		$('.bag-item').addClass('fix-bag');
             	}
             	else {
+            		$('.sub-menu').removeClass('fix-submenu');
             		$('.nav-bar').removeClass('sticky');
-            		$('.logo').removeClass('fix-logo');
+            		$('.logo').removeClass('hide');
             		$('.bag-item').removeClass('fix-bag');
             	}
             };
