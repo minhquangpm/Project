@@ -10,54 +10,41 @@
 </head>
 <body>
 	<div>
-		<div class="menu container">
-			<div class="sidebar-left">
-				<ul>
-					<li><a href="#">Contact Us</a></li>
-					<li><a href="#">Find a store</a></li>							
-				</ul>
-			</div>			
-			<div class="bag-item">
+		<div class="banner">
+			<div class="logo show">
+				<a href="home.html">SWEETHOME</a>				
+			</div>
+			<div class="bag-item show-bag">
 				<a href="">
 					<i class="fa fa-shopping-bag"></i>
 				</a>
 			</div>
 		</div>
-		<div class="banner">
-			<div class="logo-banner">
-				<a href="home.html">
-					<h1>SWEETHOME</h1>
-				</a>				
-			</div>
-		</div>
 		<div class="nav-bar">
-			<div class="logo">
-				<a href=""><h1>SWEETHOME</h1></a>
-			</div>
 			<ul class="sub-menu">
 				<li>
 					<a class="catalogue" href=""><i class="fa fa-star"></i>BRANDS</a>
 					<ul class="drop-menu">
-						<li><a href="">Brand 1</a></li>
-						<li><a href="">Brand 2</a></li>
-						<li><a href="">Brand 3</a></li>
-						<li><a href="">Brand 4</a></li>
+						<li><a href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
+						<li><a href="brand2.html">Brand 2</a></li>
+						<li><a href="brand3.html">Brand 3</a></li>
+						<li><a href="brand4.html">Brand 4</a></li>
 					</ul>
 				</li>
 				<li>
-					<a class="catalogue" href=""><i class="fa fa-coffee"></i>LIVING ROOM</a>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-coffee"></i>Phòng Khách</a>
 				</li>
 				<li>
-					<a class="catalogue" href=""><i class="fa fa-bed"></i>BEDROOM</a>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-bed"></i>Phòng Ngủ</a>
 				</li>
 				<li>
-					<a class="catalogue" href=""><i class="	fa fa-desktop"></i>OFFICE</a>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-desktop"></i>Văn Phòng</a>
 				</li>	
 				<li>
-					<a class="catalogue" href=""><i class="fa fa-cutlery"></i>DINING ROOM</a>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-cutlery"></i>Phòng Ăn</a>
 				</li>
 				<li>
-					<a class="catalogue" href=""><i class="fa fa-bath"></i>BATHROOM</a>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-bath"></i>Phòng Tắm</a>
 				</li>						
 			</ul>			
 		</div>					
@@ -200,13 +187,15 @@
             var stickyNav = function(){
             var scrollTop = $(window).scrollTop();
             	if (scrollTop > FixNavBar) {
+            		$('.sub-menu').addClass('fix-submenu');
             		$('.nav-bar').addClass('sticky');
-            		$('.logo').addClass('fix-logo');
+            		$('.logo').addClass('hide');
             		$('.bag-item').addClass('fix-bag');
             	}
             	else {
+            		$('.sub-menu').removeClass('fix-submenu');
             		$('.nav-bar').removeClass('sticky');
-            		$('.logo').removeClass('fix-logo');
+            		$('.logo').removeClass('hide');
             		$('.bag-item').removeClass('fix-bag');
             	}
             };
