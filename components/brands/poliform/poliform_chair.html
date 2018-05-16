@@ -12,6 +12,8 @@
 	<!-- source css -->
 	<link rel="stylesheet" type="text/css" href="../../../css/style-home.css">
 	<link rel="stylesheet" type="text/css" href="../../../css/style-brand.css">
+	<script src="../../../javascript/header-slide.js"></script>
+	<script src="../../../javascript/brand.js"></script>
 </head>
 <body>
 	<div>
@@ -221,34 +223,5 @@
 
 		</div>
 	</div>
-	
-
-	<script type="text/javascript">
-		$(document).ready(function() {
-			AOS.init();
-            var FixNavBar = $('.nav-bar').offset().top;
-            var FixLogo = $('.logo').offset().top;
-            var FixBagItem = $('.bag-item').offset().top;
-            var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
-            	if (scrollTop > FixNavBar) {
-            		$('.sub-menu').addClass('fix-submenu');
-            		$('.nav-bar').addClass('sticky');
-            		$('.logo').addClass('hide');
-            		$('.bag-item').addClass('fix-bag');
-            	}
-            	else {
-            		$('.sub-menu').removeClass('fix-submenu');
-            		$('.nav-bar').removeClass('sticky');
-            		$('.logo').removeClass('hide');
-            		$('.bag-item').removeClass('fix-bag');
-            	}
-            };
-            $(window).scroll(function() {
-				stickyNav();
-			});
-        });
-    </script>
-    	
 </body>
 </html>
