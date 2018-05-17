@@ -10,6 +10,7 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
 </head>
 <body>
 	<div>
@@ -24,9 +25,12 @@
 			</div>
 		</div>
 		<div class="nav-bar">
+			<div class="menu-icon">
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
 			<ul class="sub-menu">
-				<li>
-					<a class="catalogue" href=""><i class="fa fa-star"></i>BRANDS</a>
+				<li class="brand-dropdown">
+					<span class="catalogue"><i class="fa fa-star"></i>BRANDS</span>
 					<ul class="drop-menu">
 						<li><a href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
 						<li><a href="brand2.html">Brand 2</a></li>
@@ -166,7 +170,7 @@
 	<div class="footer">
 		<div class="container">
 			<div class="row">
-				<div class="col-xl-6 col-sm-12">
+				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
 						<h6>FOLLOW</h6>
 						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
@@ -175,14 +179,32 @@
 						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
 					</div>
 				</div>
-				<div class="col-xl-6 col-sm-12">
+				<div class="col-xl-3 col-sm-6">
 					<div class="footer-content">
-						<a href="" class="contact-us" class="">CONTACT US</a>
+						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
 						<ul>
-							<li>01,Phạm Hùng, Cầu Giấy, Hà Nội</li>
-							<li>qwertyuiop123456@gmail.com.vn</li>
-							<li>0123456789 </li>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/place/CT6A+Xa+La/@20.9608757,105.7984011,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad21667e0557:0xb8e1dd08a4c200e7!8m2!3d20.9608757!4d105.8005898"><p>CT6A1, Chung cư Xa La, Hà Đông</p></a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:nguyenducmanh.sla@gmail.com"><p>nguyenducmanh.sla@gmail.com</p></a></li>
+							<li><a style="color: #6b6b6b; " href="tel:0123456789"><p>0123456789</p></a></li>
 						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
 					</div>
 				</div>
 			</div>
@@ -227,6 +249,21 @@
 		$('.office').click(function(){
   			window.location.href = 'https://www.google.com.vn';
 		});
+    </script>
+
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.fa-bars').click(function(){
+    			$('.sub-menu').toggleClass('active-menu');
+    		})
+    	})
+    </script>
+    <script type="text/javascript">
+    	$(document).ready(function(){
+    		$('.brand-dropdown').click(function(){
+    			$('.drop-menu').toggleClass('active-dropdown');
+    		})
+    	})
     </script>
     	
 </body>
