@@ -225,13 +225,12 @@ body{
 		margin: 0;	
 		line-height: 60px;
 		text-align: left;
-		padding-left: 10px;
 		display: block;
 		position: static;
 	}
 	.drop-menu{
 		display: none;
-		padding-left: 10px;
+		padding-left: 20px;
 	}
 	.sub-menu.fix-submenu{
 		height: auto;
