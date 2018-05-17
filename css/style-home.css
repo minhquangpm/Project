@@ -258,7 +258,7 @@ body{
     30% {opacity:1;}
     100% {opacity:1;}
 }
-.manhdaica{	
+.overlay{	
     display: block;
     height: 100%;
     width: 100%;
@@ -349,4 +349,13 @@ body{
 	margin-left:auto;
 	height: auto;
 	width: 100%;
+}
+.carousel-inner img {
+	width: 100%;
+	height: 600px;
+	object-fit: cover;
+	object-position: center;
+ }
+.carousel-caption{
+ 	bottom: 35%;
 }
