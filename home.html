@@ -10,6 +10,8 @@
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+	<script src="javascript/header.js"></script>
 </head>
 <body>
 	<div>
@@ -215,55 +217,5 @@
 			</div>
 		</div>
 	</div>
-	<script type="text/javascript">
-		$(document).ready(function() {
-		    var FixNavBar = $('.nav-bar').offset().top;
-		    var FixLogo = $('.logo').offset().top;
-		    var FixBagItem = $('.bag-item').offset().top;
-		    var stickyNav = function(){
-		    var scrollTop = $(window).scrollTop();
-		        if (scrollTop > FixNavBar) {
-		            $('.sub-menu').addClass('fix-submenu');
-		            $('.nav-bar').addClass('sticky');
-		            $('.logo').addClass('hide');
-		            $('.bag-item').addClass('fix-bag');
-		        }
-		        else {
-		            $('.sub-menu').removeClass('fix-submenu');
-		            $('.nav-bar').removeClass('sticky');
-		            $('.logo').removeClass('hide');
-		            $('.bag-item').removeClass('fix-bag');
-		        }
-		    };
-		    $(window).scroll(function() {
-		        stickyNav();
-		    });    
-		});
-        $('.bathroom').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-        });     
-        $('.living-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-        });
-        $('.dining-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-        });
-        $('.bed-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-        });
-        $('.office').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-        });     
-		$(document).ready(function(){
-		    $('.fa-bars').click(function(){
-		        $('.sub-menu').toggleClass('active-menu');
-		    });
-		});
-		$(document).ready(function(){
-		    $('.brand-dropdown').click(function(){
-		        $('.drop-menu').toggleClass('active-dropdown');
-		    });
-		});
-	</script>  	
 </body>
 </html>
