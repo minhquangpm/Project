@@ -14,7 +14,7 @@ body{
 	max-width: 87.5rem;
 	width: 100%;
 }
-                        /*header*/
+                                                  /*header*/
 .bag-item {
 	float: right;
 }
@@ -200,8 +200,16 @@ body{
 .brand-dropdown{
 	cursor: pointer;
 }
-/*responsive*/
+                                                   /*responsive*/
 @media (max-width: 1000px){
+	.nav-bar{
+		position: fixed;
+	    width: 100%;
+	    left: 0;
+	    top: 0;
+	    z-index: 100;
+	    right: 0;
+	}
 	.bag-item.fix-bag {
 		display: none;
 	}
@@ -250,7 +258,7 @@ body{
 	}
 
 }
-/*content*/
+                                                 /*content*/
 .room-show{
 	background-color: white;
 }
@@ -408,6 +416,7 @@ body{
 .show-up{
 	animation: fadein 1s;
 }
+                                                   /*footer*/
 .footer .row{
 	padding: 50px 0;
 }
@@ -439,6 +448,20 @@ body{
 }
 .footer-content ul{
 	padding-top: 10px ;
+	list-style-type: none;
+	height: auto;
+}
+.footer-content ul li{
+	display: block;
+	height: auto;width: auto;
+}
+.footer-content ul li a{
+	display: block;
+	padding: 10px 0;
+    font-size: 15px;
+    text-align: left;
+    width: auto;
+    line-height: 18px;
 }
 .footer-content{
 	display: block;
