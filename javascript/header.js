@@ -20,26 +20,33 @@ $(document).ready(function() {
       $(window).scroll(function() {
             stickyNav();
       });
-      $('.bathroom').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-      });     
-      $('.living-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-      });
-      $('.dining-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-      });
-      $('.bed-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-      });
-      $('.office').click(function(){
-            window.location.href = 'https://www.google.com.vn';
-      });     
-      $('.fa-bars').click(function(){
-            $('.sub-menu').toggleClass('active-menu');
-      });
-      $('.brand-dropdown').click(function(){
-            $('.drop-menu').toggleClass('active-dropdown');
-      });
 });
-        
+
+
+$(document).ready(function() {
+	$('.bathroom').click(function(){
+	    window.location.href = 'https://www.google.com.vn';
+	});     
+	$('.living-room').click(function(){
+	    window.location.href = 'https://www.google.com.vn';
+	});
+	$('.dining-room').click(function(){
+	    window.location.href = 'https://www.google.com.vn';
+	});
+	$('.bed-room').click(function(){
+	    window.location.href = 'https://www.google.com.vn';
+	});
+	$('.office').click(function(){
+	    window.location.href = 'https://www.google.com.vn';
+	});
+});
+
+     
+$(document).ready(function() {
+	$('.fa-bars').click(function(){
+	    $('.sub-menu').toggleClass('active-menu');
+	});
+	$('.brand-dropdown').click(function(){
+	    $('.drop-menu').toggleClass('active-dropdown');
+	});
+});
