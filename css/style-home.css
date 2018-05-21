@@ -512,3 +512,9 @@ body{
 .carousel-caption{
  	bottom: 35%;
 }
+.reserved{
+	background-color: #171717;
+	height: 40px;
+	line-height: 40px;
+	color: #505050;
+}
