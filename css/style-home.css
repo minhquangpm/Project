@@ -144,6 +144,22 @@ body{
 		border: solid 1px #999999;
 		animation: showup 2s;
 	}
+	.sub-menu li >.drop-menu-1{
+		display: none;	
+		width: 200px;
+		background: #eeeeee;
+		height: auto;
+	}
+	.sub-menu li:hover .drop-menu-1{
+		display: block;
+		position: absolute;
+		list-style-type: none;
+		text-align: left;
+		padding-left: 20px;
+		z-index: 100000;
+		border: solid 1px #999999;
+		animation: showup 2s;
+	}
 }
 .sub-menu li {
 	display: inline-table;
@@ -156,6 +172,15 @@ body{
 	color: #d41f36;
 }
 .sub-menu li ul.drop-menu li span:hover{
+	color: #d41f36;
+}
+.sub-menu li ul.drop-menu-1 li{
+	display: list-item;
+}
+.sub-menu li ul.drop-menu-1 li a:hover{
+	color: #d41f36;
+}
+.sub-menu li ul.drop-menu-1 li span:hover{
 	color: #d41f36;
 }
 
@@ -200,6 +225,10 @@ body{
 .brand-dropdown{
 	cursor: pointer;
 }
+.brand-dropdown-1{
+	cursor: pointer;
+}
+
                                                    /*responsive*/
 @media (max-width: 1364px){
 	.nav-bar{
@@ -237,6 +266,10 @@ body{
 		position: static;
 	}
 	.drop-menu{
+		display: none;
+		padding-left: 20px;
+	}
+	.drop-menu-1{
 		display: none;
 		padding-left: 20px;
 	}
