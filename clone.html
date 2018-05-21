@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
+	<title>High-grade bathtub Sico</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="css/style-home.css">	
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<link rel="stylesheet" type="text/javascript" href="javascript/header-slide.js">
+	<link rel="stylesheet" type="text/css" href="css/ctsp.css">
+	<script src="javascript/header.js"></script>
 </head>
 <body>
 	<div>
 		<div class="banner">
 			<div class="logo show">
-				<a href="home.html">SWEETHOME</a>				
+				<a href="home.html">DURABLE FURNITURES</a>				
 			</div>
 			<div class="bag-item show-bag">
 				<a href="">
@@ -22,14 +23,17 @@
 			</div>
 		</div>
 		<div class="nav-bar">
+			<div class="menu-icon">
+				<a href="">DURABLE FURNITURES</a>
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
 			<ul class="sub-menu">
-				<li>
-					<a class="catalogue" href=""><i class="fa fa-star"></i>BRANDS</a>
+				<li class="brand-dropdown">
+					<span class="catalogue"><i class="fa fa-star"></i>BRANDS</span>
 					<ul class="drop-menu">
 						<li><a href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
 						<li><a href="brand2.html">Brand 2</a></li>
 						<li><a href="brand3.html">Brand 3</a></li>
-						<li><a href="brand4.html">Brand 4</a></li>
 					</ul>
 				</li>
 				<li>
@@ -46,42 +50,196 @@
 				</li>
 				<li>
 					<a class="catalogue" href=""><i class="icon-navbar fa fa-bath"></i>Bathroom</a>
+				</li>
+				<li class="brand-dropdown-1">
+					<span class="catalogue"><i class="fa fa-id-card-o"></i>About Us</span>
+					<ul class="drop-menu-1">
+						<li><a href="about-me.html">Our Story</a></li>
+						<li><a href="brand2.html">Contact Us</a></li>
+					</ul>
 				</li>						
 			</ul>			
 		</div>					
 	</div>
 	<div class="content">
-		<div class="parallax">
-
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-8" class="ss2">
+				<div class=" ss4">
+  				<img id="expandedImg"  src="image/sico.jpg" style="width:100%">
+  				<div id="imgtext"></div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			    <img  src="image/sico(1).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/sico(2).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/sico(3).jpg" style="width:100%;height: 130px;" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="image/sico.jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			</div>
+			<script>
+			function myFunction(imgs) {
+			    var expandImg = document.getElementById("expandedImg");
+			    var imgText = document.getElementById("imgtext");
+			    expandImg.src = imgs.src;
+			    imgText.innerHTML = imgs.alt;
+			    expandImg.parentElement.style.display = "block";
+			}
+			</script>
+			</div>
+		<div class="col-lg-4">
+				<h3 class="ss1">High-grade bathtub Sico</h3>
+				<h4>Product code: SCO01</h4>
+				<p style="color: RED">Price: $5.000</p>
+				<div class="over" style="margin: 15px 0">
+					<p style="text-align: justify;">The product is designed with modern style, suitable bath depth plus soft smooth surface, soft pillow is made of soft rubber to feel comfortable and safe when enjoying the feeling of relaxation in the bath.</p>	
+					<p style="text-align: justify;">Bringing our customers quality products and attentive customer service is our motto.</p>
+					<button class="dt1">Ordered</button>
+				</div>
 		</div>
 	</div>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<script type="text/javascript">
-        $(document).ready(function() {
-            var FixNavBar = $('.nav-bar').offset().top;
-            var FixLogo = $('.logo').offset().top;
-            var FixBagItem = $('.bag-item').offset().top;
-            var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
-            	if (scrollTop > FixNavBar) {
-            		$('.sub-menu').addClass('fix-submenu');
-            		$('.nav-bar').addClass('sticky');
-            		$('.logo').addClass('hide');
-            		$('.bag-item').addClass('fix-bag');
-            	}
-            	else {
-            		$('.sub-menu').removeClass('fix-submenu');
-            		$('.nav-bar').removeClass('sticky');
-            		$('.logo').removeClass('hide');
-            		$('.bag-item').removeClass('fix-bag');
-            	}
-            };
-            $(window).scroll(function() {
-				stickyNav();
-			});
-        });
-    </script>
-    	
+</div>
+<div class="container">
+	<h3 class="ss1">PRODUCT INFORMATION</h3>
+	<table>
+		<tr> 
+			<td  class="table1">
+				<label>Product code</label>
+			</td>
+			<td>SCO01</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Weight(kg)</label>
+			</td>
+			<td>105</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Size RxSxC(mm)</label>
+			</td>
+			<td>1850x1200x620</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Origin</label>	
+			</td>
+			<td>Vietnam</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Material</label>
+			</td>
+			<td>High-grade acrylic resin.</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Guarantee</label>	
+			</td>
+			<td>Products are warranted for 5 years.</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label >Color</label>	
+			</td>
+			<td>
+				<i  class="fas fa-square" style="color: #fff"></i>White
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="container bg-3">    
+  <h3 class="ss1" ">SIMILAR PRODUCT</h3><br>
+  <div class="row container">
+    <div class="sptt">
+      <a href="bt001.html">
+      <img src="image/bt001.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>High-grade bathtub BT001</p>
+      <strong style="color: red">$6.500</strong>
+    </div>
+    <div  class="sptt"> 
+      <a href="bt004.html">
+      <img src="image/bt004.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>High-grade bathtub BT004</p>
+      <strong style="color: red">$6.900</strong>
+    </div>
+   <div class="sptt"> 
+      <a href="bt006.html">
+      <img src="image/bt006.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>High-grade bathtub BT006</p>
+      <strong style="color: red">$7.280</strong>
+    </div>
+    <div class="sptt">
+      <a href="bt009.html"> 
+      <img src="image/bT009.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>Desk staff BT009</p>
+      <strong style="color: red">$7.480</strong>  
+    </div>
+  </div>
+</div>
+	</div>	
+	<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>ROOMS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b; ">Living Room</a></li>
+							<li><a style="color: #6b6b6b; ">Bedroom</a></li>
+							<li><a style="color: #6b6b6b; ">Office</a></li>
+							<li><a style="color: #6b6b6b; ">Kitchen</a></li>
+							<li><a style="color: #6b6b6b; ">Bathroom</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>BRANDS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b;" href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 2</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 3</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<ul>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/place/CT6A+Xa+La/@20.9608757,105.7984011,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad21667e0557:0xb8e1dd08a4c200e7!8m2!3d20.9608757!4d105.8005898">CT6A1, Chung cư Xa La, Hà Đông</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:nguyenducmanh.sla@gmail.com">nguyenducmanh.sla@gmail.com</a></li>
+							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="reserved">
+		<div class="container">
+			©2018 DURABLE FURNITURES COMPANY. All rights reserved.
+		</div>
+	</div>		
 </body>
 </html>
