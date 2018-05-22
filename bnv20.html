@@ -7,7 +7,11 @@
 	<link rel="stylesheet" type="text/css" href="css/style-home.css">	
 	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="css/ctsp.css">
+	<script src="javascript/header.js"></script>
 </head>
 <body>
 	<div>
@@ -22,12 +26,16 @@
 			</div>
 		</div>
 		<div class="nav-bar">
+			<div class="menu-icon">
+				<a href="">SWEETHOME</a>
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
 			<ul class="sub-menu">
-				<li>
-					<a class="catalogue" href=""><i class="fa fa-star"></i>BRANDS</a>
+				<li class="brand-dropdown">
+					<span class="catalogue"><i class="fa fa-star"></i>BRANDS</span>
 					<ul class="drop-menu">
 						<li><a href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
-						<li><a href="brand2.html">Brand 2</a></li>
+						<li><a href="brand2.html">Cassina</a></li>
 						<li><a href="brand3.html">Brand 3</a></li>
 						<li><a href="brand4.html">Brand 4</a></li>
 					</ul>
@@ -52,11 +60,10 @@
 	</div>
 
 	<div class="content">
-	<div class="container">
+	<div class="container" style="margin-top: 90px;">
 		<div class="row">
 			<div class="col-lg-8" class="ss2">
 				<div class=" ss4">
-  				<span onclick="this.parentElement.style.display=block'" class="closebtn">&times;</span>
   				<img id="expandedImg"  src="image/bnv20.jpg" style="width:100%">
   				<div id="imgtext"></div>
 			</div>
@@ -170,34 +177,53 @@
     </div>
   </div>
 </div>
+<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>ROOMS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b; ">Living Room</a></li>
+							<li><a style="color: #6b6b6b; ">Bedroom</a></li>
+							<li><a style="color: #6b6b6b; ">Office</a></li>
+							<li><a style="color: #6b6b6b; ">Kitchen</a></li>
+							<li><a style="color: #6b6b6b; ">Bathroom</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>BRANDS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b;" href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 2</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 3</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<ul>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/place/CT6A+Xa+La/@20.9608757,105.7984011,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad21667e0557:0xb8e1dd08a4c200e7!8m2!3d20.9608757!4d105.8005898">CT6A1, Chung cư Xa La, Hà Đông</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:nguyenducmanh.sla@gmail.com">nguyenducmanh.sla@gmail.com</a></li>
+							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
-
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-	<script type="text/javascript">
-        $(document).ready(function() {
-            var FixNavBar = $('.nav-bar').offset().top;
-            var FixLogo = $('.logo').offset().top;
-            var FixBagItem = $('.bag-item').offset().top;
-            var stickyNav = function(){
-            var scrollTop = $(window).scrollTop();
-            	if (scrollTop > FixNavBar) {
-            		$('.sub-menu').addClass('fix-submenu');
-            		$('.nav-bar').addClass('sticky');
-            		$('.logo').addClass('hide');
-            		$('.bag-item').addClass('fix-bag');
-            	}
-            	else {
-            		$('.sub-menu').removeClass('fix-submenu');
-            		$('.nav-bar').removeClass('sticky');
-            		$('.logo').removeClass('hide');
-            		$('.bag-item').removeClass('fix-bag');
-            	}
-            };
-            $(window).scroll(function() {
-				stickyNav();
-			});
-        });
-    </script>
-    	
 </body>
 </html>

@@ -44,5 +44,8 @@ $(document).ready(function() {
       $('.brand-dropdown').click(function(){
             $('.drop-menu').toggleClass('active-dropdown');
       });
+      $('.brand-dropdown-1').click(function(){
+            $('.drop-menu-1').toggleClass('active-dropdown');
+      });
 });
         
