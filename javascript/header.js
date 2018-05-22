@@ -47,5 +47,8 @@ $(document).ready(function() {
       $('.brand-dropdown-1').click(function(){
             $('.drop-menu-1').toggleClass('active-dropdown');
       });
+      $("#send").click(function(){
+            alert("Thank you")
+      });
 });
         
