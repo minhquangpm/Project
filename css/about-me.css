@@ -1,0 +1,33 @@
+body{
+	background-color: #eeeeee;
+}
+img{
+	max-width: 100%;
+	height: auto;
+}
+.bg1{
+	background-image: url(../image/manh11.jpg);
+	height: 800px;
+}
+.image-wrap{
+	position: relative;
+	display: inline-block;
+	max-width: 100%;
+}
+.image-wrap img{
+	position: relative;
+}
+.text-about{
+	text-align: center;
+	margin: auto;
+}.gachngang{
+	width: 200px;
+	border-color: #63AA9C;
+}
+.text-banner{
+	font-size: 60px;
+}
+.text-mission{
+	text-align: center;
+	padding: 50px 0;
+}
