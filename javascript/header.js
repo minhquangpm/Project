@@ -1,4 +1,7 @@
 $(document).ready(function() {
+      // function() {
+            
+      // };
       var FixNavBar = $('.nav-bar').offset().top;
       var FixLogo = $('.logo').offset().top;
       var FixBagItem = $('.bag-item').offset().top;
