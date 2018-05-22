@@ -1,13 +1,13 @@
 body{
 	background-color: #eeeeee;
 }
+.bg1{
+	background-image: url(../image/manh/manh11.jpg);
+	height: 800px;
+}
 img{
 	max-width: 100%;
 	height: auto;
-}
-.bg1{
-	background-image: url(../image/manh11.jpg);
-	height: 800px;
 }
 .image-wrap{
 	position: relative;
@@ -25,7 +25,7 @@ img{
 	border-color: #63AA9C;
 }
 .text-banner{
-	font-size: 60px;
+	font-size: 50px;
 }
 .text-mission{
 	text-align: center;

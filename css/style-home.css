@@ -301,31 +301,31 @@ body{
 }
 
 .living-room{
-	background-image: url(../image/manh.jpg);
+	background-image: url(../image/manh/manh.jpg);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
 }
 .bed-room{
-	background-image: url(../image/manh1.jpg);
+	background-image: url(../image/manh/manh1.jpg);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
 }
 .office{
-	background-image: url(../image/manh2.jpg);
+	background-image: url(../image/manh/manh2.jpg);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
 }
 .dining-room{
-	background-image: url(../image/manh3.jpg);
+	background-image: url(../image/manh/manh3.jpg);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
 }
 .bathroom{
-	background-image: url(../image/manh4.jpg);
+	background-image: url(../image/manh/manh4.jpg);
 	height: 500px;
 	background-size: cover;
 	background-position: center;
@@ -350,7 +350,7 @@ body{
     transition: all 1s;
 }
 .bg-banner{
-	background-image: url(../image/manh5.jpg);
+	background-image: url(../image/manh/manh5.jpg);
 }
 
 .parent:hover .child, .parent:focus .child {
