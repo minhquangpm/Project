@@ -6,9 +6,21 @@ html, body {
 .pro-content {
 	width: 90%;
 	margin: auto;
-	height: 100%;
+	/*height: 100vh;*/
+	/*overflow: auto;	*/
 }
 
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.blank-space-top {
+	height: 80px;
+}
 
 .brand-banner{
 	width: 100%;
@@ -319,10 +331,6 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 @media only screen and (max-width: 1600px) {
 	.pro-name { font-size: 14px; }
 	.right { display: block; float: none;}
-}
-
-@media only screen and (max-width: 992px) {
-	.pro-content { height: 1500px; }
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
