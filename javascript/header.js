@@ -1,12 +1,12 @@
 $(document).ready(function() {
       // function() {
-            
+            // stickyNav();
       // };
       var FixNavBar = $('.nav-bar').offset().top;
       var FixLogo = $('.logo').offset().top;
       var FixBagItem = $('.bag-item').offset().top;
       var stickyNav = function(){
-      var scrollTop = $(window).scrollTop();
+            var scrollTop = $(window).scrollTop();
             if (scrollTop > FixNavBar) {
                   $('.sub-menu').addClass('fix-submenu');
                   $('.nav-bar').addClass('sticky');
@@ -20,6 +20,7 @@ $(document).ready(function() {
                   $('.bag-item').removeClass('fix-bag');
             }
       };
+      // stickyNav();
       $(window).scroll(function() {
             stickyNav();
       });
