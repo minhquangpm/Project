@@ -3,6 +3,54 @@ $(function() {
 	$('.top-menu').click(function(){
 		$('.expand-menu').toggle();
 	});
+
+    $('.ml-all').click(function(){
+        $('.brand-product').children().show();
+    });
+
+    $('.ml-toggle').click(function() {
+        if ($(this).siblings('.ml-hide').is(':hidden')) {
+            // $('.ml-hide').hide();
+            // $('.ml-hide').parent('li').removeClass('choosen-menu');
+            $(this).siblings('.ml-hide').show();
+            // $(this).parent('li').addClass('choosen-menu');
+        } else {
+            $(this).siblings('.ml-hide').hide();
+            // $(this).parent('li').removeClass('choosen-menu');
+        }
+        
+    });
+    /* process show/hide in brand page */
+    var brand_do_the_magic = function(){
+        var pro_row = $(this).attr('class').split('-')[1].split(' ')[0];
+        if($('.brand-product').children(':hidden').length === 0) {
+            $(this).addClass('choosen-menu');
+            $('.' + pro_row).siblings().hide();
+            $('.' + pro_row).show();
+        }else if ($('.' + pro_row).is(':hidden')) {
+            $(this).addClass('choosen-menu');
+            $('.' + pro_row).show();
+        } else {
+            $(this).removeClass('choosen-menu');
+            $('.' + pro_row).hide();
+        }
+        if ($('.brand-product').children(':visible').length === 0) {
+            $('.brand-product').children().show();
+        }
+    };
+
+    $('.show-mersofa').click(brand_do_the_magic);
+    $('.show-merbed').click(brand_do_the_magic);
+    $('.show-mertable').click(brand_do_the_magic);
+    $('.show-merchair').click(brand_do_the_magic);
+    $('.show-jusofa').click(brand_do_the_magic);
+    $('.show-jubed').click(brand_do_the_magic);
+    $('.show-jutable').click(brand_do_the_magic);
+    $('.show-juchair').click(brand_do_the_magic);
+    $('.show-masofa').click(brand_do_the_magic);
+    $('.show-mabed').click(brand_do_the_magic);
+    $('.show-matable').click(brand_do_the_magic);
+    $('.show-machair').click(brand_do_the_magic);
 });
 
 

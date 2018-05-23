@@ -137,19 +137,14 @@ html, body {
 	padding-top: 30px;
 	padding-left: 15px;
 	padding-right: 15px;
-}
-
-.sticky-menu-left {
-	/*border: 1px solid black;*/
 	position: -webkit-sticky;
 	position: sticky;
 	top: 60px;
 }
 
-
 .placeholder-left {
 	width: 300px;
-	height: 100vh;
+	height: 900vh;
 	float: left;
 	clear: left;
 	background-color: #f7f7f7;
@@ -199,6 +194,14 @@ ul.brand-submenu li a {
 
 ul.brand-submenu li:not(.choosen-menu):hover {
 	background-color: #eeeeee;
+}
+
+.ml-hide {
+	display: none;
+}
+
+.ml-hide li {
+	cursor: pointer;
 }
 
 .darken-layer {
@@ -415,7 +418,8 @@ li.choosen-menu a {
 
 .expand-menu {
 	display: none;
-	height: 120px;
+	/*height: 120px;*/
+	height: 100%;
 	background-color: #f7f7f7;
 	padding-top: 10px;
 }
@@ -427,6 +431,10 @@ li.choosen-menu a {
     height: 100%;
     text-decoration: none;
     color: black;
+}
+
+.expand-menu .ml-hide li {
+	padding-left: 10%;
 }
 
 
