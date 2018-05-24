@@ -8,20 +8,21 @@ $(function() {
         $('.brand-product').children().show();
     });
 
-    $('.ml-toggle').click(function() {
+    var menu_do_the_magic = function() {
         var class_ml_toggle = $(this).attr('class');
-        if ($('.' + class_ml_toggle).siblings('.ml-hide').is(':hidden')) {
-            // $('.ml-hide').hide();
-            // $('.ml-hide').parent('li').removeClass('choosen-menu');
+        if ($(this).siblings('.ml-hide').is(':hidden')) {
             $('.' + class_ml_toggle).siblings('.ml-hide').show();
             $('.expand-menu').show();
-            // $(this).parent('li').addClass('choosen-menu');
-        } else {
+        } else {    
             $('.' + class_ml_toggle).siblings('.ml-hide').hide();
-            // $(this).parent('li').removeClass('choosen-menu');
         }
         
-    });
+    }
+
+    $('.ml-toggle1').click(menu_do_the_magic);
+    $('.ml-toggle2').click(menu_do_the_magic);
+    $('.ml-toggle3').click(menu_do_the_magic);
+
     /* process show/hide in brand page */
     var brand_do_the_magic = function(){
         var pro_row = $(this).attr('class').split('-')[1].split(' ')[0];

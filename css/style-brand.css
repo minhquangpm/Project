@@ -3,9 +3,12 @@ html, body {
   height: 100%;
 }
 
+
 .pro-content {
+	display: table !important;
 	width: 90%;
 	margin: auto;
+	
 }
 
 .clearfix:after {
@@ -27,7 +30,11 @@ html, body {
 	/*background-attachment: fixed;*/
 	background-size: cover;
 	height: 400px;
-	/*height: auto;*/
+}
+
+.all-brand-banner {
+	background-image: url('../image/brands/brand-banner.jpg');
+	background-position: center;
 }
 
 .mercury-banner-sofa {
@@ -119,35 +126,77 @@ html, body {
 }
 
 .brand-info {
-	height: 200px;
-	line-height: 200px;
+	width: 90%;
+	position: relative;
+	margin: auto;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.brand-info .row {
+	/*width: 90%;*/
+	margin: auto;
+}
+
+.brand-info img {
+	width: 90%;
+	height: auto;
+}
+
+
+.white {
+	background-color: white;
 }
 
 .brand-info p {
 	font-family: 'Montserrat';
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 400;
 	letter-spacing: -.3px;
-	text-align: center;
-	vertical-align: middle;
+	text-align: justify;
+	padding-top: 20px;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.brand-info-img {
+	width: 300px;
+	min-height: 200px;
+	height: auto;
+	background-image: url('../image/brands/brand1.jpg');
+	background-position: center;
+	background-size: cover;
+}
+
+.line-break {
+	width: 90%;
+	margin: auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #ddd;
 }
 
 .menu-left {
 	width: 300px;
-	padding-top: 30px;
+	padding-top: 30px; 
 	padding-left: 15px;
 	padding-right: 15px;
 	position: -webkit-sticky;
 	position: sticky;
 	top: 60px;
+	/*float: left;*/
 }
 
 .placeholder-left {
+	vertical-align: top;
 	width: 300px;
-	height: 1000vh;
-	float: left;
-	clear: left;
+	/*margin-left: 10px;*/
 	background-color: #f7f7f7;
+	display: table-cell !important;
+}
+
+.brand-product {
+	display: table-cell !important;
 }
 
 .product-title {
@@ -378,7 +427,6 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 	.menu-left { display: none; }
 	.placeholder-left { display: none; }
 	.brand-product { margin:auto; }
-	/*.pro-content { height: 1500px; }*/
 }
 
 @media only screen and (min-width: 1000px) {
