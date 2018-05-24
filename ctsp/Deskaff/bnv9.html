@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="../../css/style-home.css">	
+	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="../../css/ctsp.css">
+	<script src="../../javascript/header.js"></script>
+</head>
+<body>
+	<div>
+		<div class="banner">
+			<div class="logo show">
+				<a href="home.html">SWEETHOME</a>				
+			</div>
+			<div class="bag-item show-bag">
+				<a href="">
+					<i class="fa fa-shopping-bag"></i>
+				</a>
+			</div>
+		</div>
+		<div class="nav-bar">
+			<div class="menu-icon">
+				<a href="">SWEETHOME</a>
+				<i class="fa fa-bars fa-2x"></i>
+			</div>
+			<ul class="sub-menu">
+				<li class="brand-dropdown">
+					<span class="catalogue"><i class="fa fa-star"></i>BRANDS</span>
+					<ul class="drop-menu">
+						<li><a href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
+						<li><a href="brand2.html">Cassina</a></li>
+						<li><a href="brand3.html">Brand 3</a></li>
+						<li><a href="brand4.html">Brand 4</a></li>
+					</ul>
+				</li>
+				<li>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-coffee"></i>Living room</a>
+				</li>
+				<li>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-bed"></i>Bedroom</a>
+				</li>
+				<li>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-desktop"></i>Office</a>
+				</li>	
+				<li>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-cutlery"></i>Kitchen</a>
+				</li>
+				<li>
+					<a class="catalogue" href=""><i class="icon-navbar fa fa-bath"></i>Bathroom</a>
+				</li>						
+			</ul>			
+		</div>					
+	</div>
+
+	<div class="content">
+	<div class="container" style="margin-top: 90px;">
+		<div class="row">
+			<div class="col-lg-8" class="ss2">
+				<div class=" ss4">
+  				<img id="expandedImg"  src="../../image/deskstaff/bnv9.jpg" style="width:100%">
+  				  				<div id="imgtext"></div>
+			</div>
+			<div class="row">
+			  <div class="column">
+			    <img  src="../../image/deskstaff/bnv9(1).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="../../image/deskstaff/bnv9(2).jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			  <div class="column">
+			    <img  src="../../image/deskstaff/bnv9.jpg" style="width:100%" onclick="myFunction(this);">
+			  </div>
+			</div>
+			<script>
+			function myFunction(imgs) {
+			    var expandImg = document.getElementById("expandedImg");
+			    var imgText = document.getElementById("imgtext");
+			    expandImg.src = imgs.src;
+			    imgText.innerHTML = imgs.alt;
+			    expandImg.parentElement.style.display = "block";
+			}
+			</script>
+			</div>
+		<div class="col-lg-4">
+				<h3 class="ss1">Desk staff BVN9</h3>
+				<h4>Product code: BNV9</h4>
+				<p style="color: RED">Price: $690</p>
+				<div class="over" style="margin: 15px 0">
+					<p style="text-align: justify;">The product is designed with simple style, add learning hangers and drawers. Flexible drawer for easy access. The table is drilled with a lid to help you easily pull the wire without affecting the aesthetics of the table. Melamine table scratch resistant and moldy, beautiful time, 25mm thickness.</p>	
+					<p style="text-align: justify;">Bringing our customers quality products and attentive customer service is our motto.</p>
+					<button class="dt1">Ordered</button>
+				</div>
+		</div>
+	</div>
+</div>
+<div class="container">
+	<h3 class="ss1">PRODUCT INFORMATION</h3>
+	<table>
+		<tr> 
+			<td  class="table1">
+				<label>Product code</label>
+			</td>
+			<td>BNV9</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Size RxSxC(mm)</label>
+			</td>
+			<td>1200x750x660</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Origin</label>	
+			</td>
+			<td>Vietnam</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Material</label>
+			</td>
+			<td>MFC ashy Melamine</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label>Guarantee</label>	
+			</td>
+			<td>Products are warranted for 12 months.</td>
+		</tr>
+		<tr>
+			<td class="table1">
+				<label >Color</label>	
+			</td>
+			<td>
+				<i  class="fas fa-square" style="color: BLACK"></i>Black 
+				<i class="fas fa-square" style="color: BROWN"></i>Brown
+			</td>
+		</tr>
+	</table>
+</div>
+<div class="container bg-3">    
+  <h3 class="ss1" ">SIMILAR PRODUCT</h3><br>
+  <div class="row container">
+    <div class="sptt">
+      <a href="bnv4.html">
+      <img src="../../image/deskstaff/bnv4.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>Desk staff BNV4</p>
+      <strong style="color: red">$500</strong>
+    </div>
+    <div  class="sptt"> 
+      <a href="bnv9.html">
+      <img src="../../image/deskstaff/bnv9.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>Desk staff BNV5</p>
+      <strong style="color: red">$650</strong>
+    </div>
+   <div class="sptt"> 
+      <a href="bnv10.html">
+      <img src="../../image/deskstaff/bnv10.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>Desk staff BNV10</p>
+      <strong style="color: red">$780</strong>
+    </div>
+    <div class="sptt">
+      <a href="bnv20.html"> 
+      <img src="../../image/deskstaff/bnv20.jpg" class="img-responsive anhdm" style="width:100%" alt="Image">
+      </a>
+      <p>Desk staff BNV20</p>
+      <strong style="color: red">$1.800</strong>  
+    </div>
+  </div>
+</div>
+<div class="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>ROOMS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b; ">Living Room</a></li>
+							<li><a style="color: #6b6b6b; ">Bedroom</a></li>
+							<li><a style="color: #6b6b6b; ">Office</a></li>
+							<li><a style="color: #6b6b6b; ">Kitchen</a></li>
+							<li><a style="color: #6b6b6b; ">Bathroom</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>BRANDS</h6>
+						<ul>
+							<li><a style="color: #6b6b6b;" href="components/brands/poliform/poliform_sofa.html">Poliform</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 2</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 3</a></li>
+							<li><a style="color: #6b6b6b; " href="">Brand 4</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<a href="" class="contact-us" style="color: #6b6b6b;" class="">CONTACT US</a>
+						<ul>
+							<li><a style="color: #6b6b6b;" target="_blank" href="https://www.google.com/maps/place/CT6A+Xa+La/@20.9608757,105.7984011,17z/data=!3m1!4b1!4m5!3m4!1s0x3135ad21667e0557:0xb8e1dd08a4c200e7!8m2!3d20.9608757!4d105.8005898">CT6A1, Chung cư Xa La, Hà Đông</a></li>
+							<li><a style="color: #6b6b6b; " href="mailto:nguyenducmanh.sla@gmail.com">nguyenducmanh.sla@gmail.com</a></li>
+							<li><a style="color: #6b6b6b; " href="tel:0123456789">0123456789</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-xl-3 col-sm-6">
+					<div class="footer-content">
+						<h6>FOLLOW</h6>
+						<a href="" class="footer-icon"><i class="fa fa-facebook-official"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-instagram"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-google-plus-square"></i></a>
+						<a href="" class="footer-icon"><i class="fa fa-twitter-square"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

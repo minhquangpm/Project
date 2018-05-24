@@ -39,9 +39,9 @@ td{
 }
 ''.ss2{
 	display: block;
-border-right-width: 2px;
-border-right-color: PINK;
- border-right-style: solid;
+	border-style:solid; 
+	border-width:1px;
+	border-color: #858a91;
 }
 .ss1{
 	display: block;
