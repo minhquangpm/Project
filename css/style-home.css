@@ -44,7 +44,7 @@ body{
 .logo{
 	position: absolute;
 	top: 5px;
-	left: 47%;
+	left: 50%;
 	width: auto;
 	height: auto;
 	transition: all .5s ease;
@@ -131,7 +131,7 @@ body{
 	z-index: 101;
 	display: block;
 }
-@media (min-width: 1365px){
+@media (min-width: 1011px){
 	.sub-menu li >.drop-menu{
 		display: none;	
 		width: 200px;
@@ -234,7 +234,11 @@ body{
 }
 
                                                    /*responsive*/
-@media (max-width: 1364px){
+@media (max-width: 1010px){
+	.brand-all{
+		pointer-events: none;
+		cursor: default;
+	}
 	.nav-bar{
 		position: fixed;
 	    width: 100%;
