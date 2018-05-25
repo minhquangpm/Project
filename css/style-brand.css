@@ -7,7 +7,7 @@ html, body {
 .pro-content {
 	/*width: 90%;*/
 	margin: auto;
-	
+	display: table;
 }
 
 .clearfix:after {
@@ -154,6 +154,9 @@ html, body {
 	height: auto;
 }
 
+.brand-product {
+	display: table-cell !important;
+}
 
 .white {
 	background-color: white;
@@ -202,15 +205,9 @@ html, body {
 	width: 300px;
 	/*margin-left: 10px;*/
 	background-color: #f7f7f7;
-}
-
-.table-display {
-	display: table !important;
-}
-
-.table-cell {
 	display: table-cell !important;
 }
+
 
 .product-title-left {
 	padding: 10px;
@@ -324,12 +321,14 @@ ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-le
 }
 
 .pro-name {
-	height: 20px;
+	/*height: 20px;*/
+	font-size: 14px;
 	font-family: 'Montserrat';
 	font-weight: 600;
 	/*font-size: 17px;*/
 	padding: 10px;
 	position: relative;
+	letter-spacing: -.3px;
 }
 
 .pro-img-frame {
@@ -437,10 +436,12 @@ ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-le
 }
 
 
-@media only screen and (max-width: 1600px) {
-	.pro-name { font-size: 14px; }
-	/*.right { display: block; float: none !important;}*/
+@media only screen and (max-width: 1400px) {
+	/*.pro-name { font-size: 12px;}*/
+	.pro-name span.left { display: left; }
+	.pro-name span.red { display: none; }
 }
+
 
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
 	.right { display: inline-block; float: right;}
@@ -450,7 +451,8 @@ ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-le
 	.menu-left { display: none; }
 	.menu-mid { display: none; }
 	.placeholder-left { display: none !important; }
-	.brand-product { margin:auto; }
+	.brand-product { margin: auto; display: block !important;}
+	.pro-content { display: block !important; }
 }
 
 @media only screen and (min-width: 1000px) {
@@ -475,7 +477,7 @@ li.choosen-menu a {
 }
 
 .mini-menu-left {
-	margin-bottom: 30px;
+	margin-bottom: 1em;
 }
 
 .top-menu {
@@ -485,8 +487,8 @@ li.choosen-menu a {
 	vertical-align: middle;
 	background-color: #cccccc;
 	cursor: pointer;
-	
 	padding-left: 5%;
+
 }
 
 .top-menu:hover {
@@ -512,142 +514,6 @@ li.choosen-menu a {
 
 .expand-menu .ml-hide li {
 	padding-left: 10%;
-}
-
-
-/* test comparison*/
-
-.position-relative {
-    position: relative;
-}
-
-.comparePanle{
-    position: fixed;
-    bottom: 10px;
-    width:90%;
-    left:50%;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 3;
-}
-.product {
-    list-style-type: none;
-    border: 1px solid #B5B4B7;
-    margin: 0;
-    padding: 0;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
-}
-
-.product:hover {
-    box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
-}
-
-.product .header {
-    background-color: #111;
-    color: white;
-    font-size: 25px;
-}
-
-.product li {
-    border-bottom: 1px solid #B5B4B7;
-    padding: 10px;
-    text-align: center;
-}
-
-.product .grey {
-    background-color: #eee;
-    font-size: 20px;
-}
-
-.contentPop{
-    width: 80%;
-    height: 80%;
-    /*margin-top: 200px;*/
-    margin:auto;
-}
-
-.pop-fix {
-	margin-top: 100px;
-	padding-top: 100px;
-	padding-bottom: 100px
-}
-
-.compHeader{
-    min-height: 200px;
-}
-
-.compHeader img {
-	width: 100%;
-	height: auto;
-}
-
-.compareThumb{
-    height: 150px;
-}
-
-
-.pro-compare {
-	padding: 5px;
-}
-
-.pro-compare img{
-	width: 100%;
-	min-height: auto;
-}
-
-@media only screen and (max-width:992px) and (min-width:600px){
-  li{
-        font-size: 12px;
-    }  
-}
-    
-}
-@media only screen and (max-width:600px){
-    li{
-        font-size: 8px;
-    }
-    .comparePanle h4{
-        font-size: 15px;
-    }
-    .compareThumb{
-        height: 100px;
-        
-    }
-    .compHeader{
-    min-height: 150px;
-}
-}
-@media only screen and (min-width:993px){
-.comparePanle{
-    position: fixed;
-    bottom: 10px;
-    width:50%;
-    left:50%;
-    transform: translateX(-50%);
-    display: none;
-    z-index: 3;
-}
-}
-
-.selectedItemCloseBtn {
-	cursor: pointer;
-	position: absolute;
-	right: 10%;
-	color: black !important;
-	font-size: 20px;
-}
-
-.closeBtn {
-	cursor: pointer;
-}
-
-.selectedItemCloseBtn:after, .closeBtn:after {
-	content: '\002716';
-}
-
-.selectedItemCloseBtn:hover, .closeBtn:hover {
-	transform: scale(1.2);
 }
 
 .right {

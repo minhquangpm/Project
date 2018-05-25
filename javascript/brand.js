@@ -5,9 +5,9 @@ $(function() {
 	});
 
     $('.ml-all').click(function(){
-        $('.brand-product').children().show();
+        $('.row').children().css('display', 'block');
     });
-
+    /* work around menu sort items in brand page*/
     var menu_do_the_magic = function() {
         var class_ml_toggle = $(this).attr('class');
         if ($(this).siblings('.ml-hide').is(':hidden')) {
@@ -19,41 +19,43 @@ $(function() {
         
     };
 
+    var brand_do_the_magic = function(event) {
+        var this_class = $(this).attr('class').split(' ')[0];
+        // console.log(this_class);
+        var product = event.data.product;
+        var brand = event.data.brand;
+        if($('.row').children(':hidden').length === 0) {
+            $('.' + this_class).addClass('choosen-menu');
+            $('[data-product][data-brand]').parent('.col-12').css('display', 'none');
+            $('[data-product=' + product + '][data-brand=' + brand + ']').parent('.col-12').css('display', 'block');
+        } else if ($('[data-product=' + product + '][data-brand=' + brand + ']').parent('.col-12').is(':hidden')) {
+            $('.' + this_class).addClass('choosen-menu');
+            $('[data-product=' + product + '][data-brand=' + brand + ']').parent('.col-12').css('display', 'block');
+        } else {
+            $('.' + this_class).removeClass('choosen-menu');
+            $('[data-product=' + product + '][data-brand=' + brand + ']').parent('.col-12').css('display', 'none');
+        }
+        if ($('.row').children(':hidden').length === 97) {
+            $('.row').children().css('display', 'block');
+        }
+    }
+
     $('.ml-toggle1').click(menu_do_the_magic);
     $('.ml-toggle2').click(menu_do_the_magic);
     $('.ml-toggle3').click(menu_do_the_magic);
 
-    /* process show/hide in brand page */
-    var brand_do_the_magic = function(){
-        var pro_row = $(this).attr('class').split('-')[1].split(' ')[0];
-        if($('.brand-product').children(':hidden').length === 0) {
-            $('.show-' + pro_row).addClass('choosen-menu');
-            $('.' + pro_row).siblings().hide();
-            $('.' + pro_row).show();
-        }else if ($(this).is(':hidden')) {
-            $('.show-' + pro_row).addClass('choosen-menu');
-            $('.' + pro_row).show();
-        } else {
-            $('.show-' + pro_row).removeClass('choosen-menu');
-            $('.' + pro_row).hide();
-        }
-        if ($('.brand-product').children(':visible').length === 0) {
-            $('.brand-product').children().show();
-        }
-    };
-
-    $('.show-mersofa').click(brand_do_the_magic);
-    $('.show-merbed').click(brand_do_the_magic);
-    $('.show-mertable').click(brand_do_the_magic);
-    $('.show-merchair').click(brand_do_the_magic);
-    $('.show-jusofa').click(brand_do_the_magic);
-    $('.show-jubed').click(brand_do_the_magic);
-    $('.show-jutable').click(brand_do_the_magic);
-    $('.show-juchair').click(brand_do_the_magic);
-    $('.show-masofa').click(brand_do_the_magic);
-    $('.show-mabed').click(brand_do_the_magic);
-    $('.show-matable').click(brand_do_the_magic);
-    $('.show-machair').click(brand_do_the_magic);
+    $('.show-mersofa').click({product: 'sofa', brand: 'mercury'}, brand_do_the_magic);
+    $('.show-merbed').click({product: 'bed', brand: 'mercury'}, brand_do_the_magic);
+    $('.show-mertable').click({product: 'table', brand: 'mercury'}, brand_do_the_magic);
+    $('.show-merchair').click({product: 'chair', brand: 'mercury'}, brand_do_the_magic);
+    $('.show-jusofa').click({product: 'sofa', brand: 'jupiter'}, brand_do_the_magic);
+    $('.show-jubed').click({product: 'bed', brand: 'jupiter'}, brand_do_the_magic);
+    $('.show-jutable').click({product: 'table', brand: 'jupiter'}, brand_do_the_magic);
+    $('.show-juchair').click({product: 'chair', brand: 'jupiter'}, brand_do_the_magic);
+    $('.show-masofa').click({product: 'sofa', brand: 'mars'}, brand_do_the_magic);
+    $('.show-mabed').click({product: 'bed', brand: 'mars'}, brand_do_the_magic);
+    $('.show-matable').click({product: 'table', brand: 'mars'}, brand_do_the_magic);
+    $('.show-machair').click({product: 'chair', brand: 'mars'}, brand_do_the_magic);
 });
 
 
@@ -109,7 +111,12 @@ $(function() {
     $(document).on('click', '.cmprBtn', function () {
         if ($(".cmprBtn").hasClass("active")) {
             /* this is to print the  features list statically*/
-            $(".contentPop").append('<div class="w3-col s3 m3 l3 compareItemParent position-relative">' + '<ul class="product">' + '<li class=" position-relative compHeader"><p class="w3-display-middle">Features</p></li>' + '<li>Title</li>' + '<li>Size</li>' + '<li>Cover</li>' + '<li>Color</li>' + '<li>Price</li></ul>' + '</div>');
+            $(".contentPop").append('<div class="position-relative t-row pc-header"><div class="t-cell compHeader">Features</div></div>' 
+                + '<div class="t-row pc-title"><div class="t-cell">Title</div></div>' 
+                + '<div class="t-row pc-size"><div class="t-cell">Size</div></div>' 
+                + '<div class="t-row pc-cover"><div class="t-cell">Cover</div></div>' 
+                + '<div class="t-row pc-color"><div class="t-cell">Color</div></div>' 
+                + '<div class="t-row pc-price"><div class="t-cell">Price</div></div>');
 
             for (var i = 0; i < list.length; i++) {
                 /* this is to add the items to popup which are selected for comparision */
@@ -117,11 +124,18 @@ $(function() {
                 var image = $('[data-id=' + list[i] + ']').find(".pro-img-frame").attr('src');
                 var title = $('[data-id=' + list[i] + ']').attr('data-title');
                 /*appending to div*/
-                $(".contentPop").append('<div class="w3-col s3 m3 l3 compareItemParent position-relative">' + '<ul class="product">' + '<li class="compHeader"><img src="' + image + '" class="compareThumb"></li>' + '<li>' + title + '</li>' + '<li>' + $(product).data('size') + '</li>' + '<li>' + $(product).data('cover') + '<li>' + $(product).data('color') + '</li>' + '<li>' + $(product).data('price') + '</li>' + '</ul>' + '</div>');
+                $('.pc-header').append('<div class="compHeader t-cell"><img src="' + image + '" class="compareThumb"></div>');
+                $('.pc-title').append('<div class="t-cell">' + title + '</div>');
+                $('.pc-size').append('<div class="t-cell">' + $(product).data('size') + '</div>');
+                $('.pc-cover').append('<div class="t-cell">' + $(product).data('cover') + '</div>');
+                $('.pc-color').append('<div class="t-cell">' + $(product).data('color') + '</div>');
+                $('.pc-price').append('<div class="t-cell">' + $(product).data('price') + '</div>');
             }
         }
         $(".modPos").show();
         $('.comparePan').hide();
+        $('.nav-bar').hide();
+        $('.banner').hide();
     });
 
     /* function to close the comparision popup */
@@ -134,6 +148,8 @@ $(function() {
         list.length = 0;
         $(".rotateBtn").toggleClass("rotateBtn");
         $('.comparePan').show();
+        $('.nav-bar').show();
+        $('.banner').show();
     });
 
     /*function to remove item from preview panel*/
