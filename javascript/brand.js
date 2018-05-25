@@ -17,7 +17,7 @@ $(function() {
             $('.' + class_ml_toggle).siblings('.ml-hide').hide();
         }
         
-    }
+    };
 
     $('.ml-toggle1').click(menu_do_the_magic);
     $('.ml-toggle2').click(menu_do_the_magic);
@@ -30,7 +30,7 @@ $(function() {
             $('.show-' + pro_row).addClass('choosen-menu');
             $('.' + pro_row).siblings().hide();
             $('.' + pro_row).show();
-        }else if ($('.' + pro_row).is(':hidden')) {
+        }else if ($(this).is(':hidden')) {
             $('.show-' + pro_row).addClass('choosen-menu');
             $('.' + pro_row).show();
         } else {

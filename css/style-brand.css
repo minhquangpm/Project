@@ -5,8 +5,7 @@ html, body {
 
 
 .pro-content {
-	display: table !important;
-	width: 90%;
+	/*width: 90%;*/
 	margin: auto;
 	
 }
@@ -39,49 +38,61 @@ html, body {
 
 .mercury-banner-sofa {
 	background-image: url('../image/mercury/banner-sofa.jpg');
+	background-position: center;
 }
 .mercury-banner-bed {
 	background-image: url('../image/mercury/banner-bed.jpg');
+	background-position: center;
 }
 
 .mercury-banner-table {
 	background-image: url('../image/mercury/banner-table.jpg');
+	background-position: center;
 }
 
 .mercury-banner-chair {
 	background-image: url('../image/mercury/banner-chair.jpg');
+	background-position: center;
 }
 
 .jupiter-banner-sofa {
 	background-image: url('../image/jupiter/banner-sofa.jpg');
+	background-position: center;
 }
 
 .jupiter-banner-bed {
 	background-image: url('../image/jupiter/banner-bed.jpg');
+	background-position: center;
 }
 
 .jupiter-banner-table {
 	background-image: url('../image/jupiter/banner-table.jpg');
+	background-position: center;
 }
 
 .jupiter-banner-chair {
 	background-image: url('../image/jupiter/banner-chair.jpg');
+	background-position: center;
 }
 
 .mars-banner-sofa {
 	background-image: url('../image/mars/banner-sofa.jpg');
+	background-position: center;
 }
 
 .mars-banner-bed {
 	background-image: url('../image/mars/banner-bed.jpg');
+	background-position: center;
 }
 
 .mars-banner-table {
 	background-image: url('../image/mars/banner-table.jpg');
+	background-position: center;
 }
 
 .mars-banner-chair {
 	background-image: url('../image/mars/banner-chair.jpg');
+	background-position: center;
 }
 
 .page-mapping {
@@ -184,7 +195,6 @@ html, body {
 	position: -webkit-sticky;
 	position: sticky;
 	top: 60px;
-	/*float: left;*/
 }
 
 .placeholder-left {
@@ -192,13 +202,22 @@ html, body {
 	width: 300px;
 	/*margin-left: 10px;*/
 	background-color: #f7f7f7;
+}
+
+.table-display {
+	display: table !important;
+}
+
+.table-cell {
 	display: table-cell !important;
 }
 
-.brand-product {
-	display: table-cell !important;
+.product-title-left {
+	padding: 10px;
+	text-align: center;
 }
 
+.product-title-left,
 .product-title {
 	font-family: 'Montserrat';
 	font-size: 18px;
@@ -206,10 +225,12 @@ html, body {
 	color: #afafaf;
 }
 
+.product-title-left a,
 .product-title a {
 	text-decoration: none;
 	color: black;
 }
+
 
 .product-title a:hover {
 	color: #828282;
@@ -226,10 +247,27 @@ ul {
 	list-style-type: none;
 }
 
-ul.brand-submenu li {
+ul.brand-submenu-left {
+	background-color: #f7f7f7;
+	text-align: left;
+	padding-left: 20px;
+}
+
+ul.brand-submenu {
+	background-color: #f7f7f7;
+	text-align: center;
+}
+
+ul.brand-submenu-left li {
 	padding: 10px;
 }
 
+ul.brand-submenu li {
+	padding: 10px;
+	display: inline-block;
+}
+
+ul.brand-submenu-left li a,
 ul.brand-submenu li a {
 	/*font-family: 'Montserrat';*/
 	font-size: 20px;
@@ -241,7 +279,7 @@ ul.brand-submenu li a {
     height: 100%;
 }
 
-ul.brand-submenu li:not(.choosen-menu):hover {
+ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-left):hover {
 	background-color: #eeeeee;
 }
 
@@ -286,10 +324,12 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 }
 
 .pro-name {
+	height: 20px;
 	font-family: 'Montserrat';
 	font-weight: 600;
 	/*font-size: 17px;*/
 	padding: 10px;
+	position: relative;
 }
 
 .pro-img-frame {
@@ -303,13 +343,13 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 }
 
 .underline-hover {
-	max-width: 100%;
+	/*max-width: 100%;*/
 	/*outline: 1px solid #dbdbdb;*/
 	/*border: 2px solid transparent;*/
 }
 
 .underline-hover2 {
-	max-width: 100%;
+	/*max-width: 100%;*/
 	/*outline: 1px solid transparent;*/
 	/*border: 2px solid transparent;*/
 }
@@ -373,131 +413,6 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 	color: white;
 }*/
 
-/* test hover effect */
-.hovereffect {
-    width: 100%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    text-align: center;
-    cursor: default;
-}
-.hovereffect .overlay1 {
-    width: 100%;
-    position: absolute;
-    overflow: hidden;
-    left: 0;
-	top: auto;
-	bottom: 0;
-	padding: 1em;
-	height: 4.75em;
-	background: #79FAC4;
-	color: #3c4a50;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,100%,0);
-	transform: translate3d(0,100%,0);
-
-}
-
-.hovereffect img {
-    display: block;
-    position: relative;
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-}
-
-.hovereffect:hover img {
-	-webkit-transform: translate3d(0,-10%,0);
-	transform: translate3d(0,-10%,0);
-}
-
-.hovereffect h2 {
-    text-transform: uppercase;
-    color: #fff;
-    text-align: center;
-    position: relative;
-    font-size: 17px;
-    padding: 10px;
-    background: rgba(0, 0, 0, 0.6);
-	float: left;
-	margin: 0px;
-	display: inline-block;
-}
-
-.hovereffect a.info {
-    display: inline-block;
-    text-decoration: none;
-    padding: 7px 14px;
-    text-transform: uppercase;
-	color: #fff;
-	border: 1px solid #fff;
-	margin: 50px 0 0 0;
-	background-color: transparent;
-}
-.hovereffect a.info:hover {
-    box-shadow: 0 0 5px #fff;
-}
-
-
-.hovereffect p.icon-links a {
-	float: right;
-	color: #3c4a50;
-	font-size: 1.4em;
-}
-
-.hovereffect:hover p.icon-links a:hover,
-.hovereffect:hover p.icon-links a:focus {
-	color: #252d31;
-}
-
-.hovereffect h2,
-.hovereffect p.icon-links a {
-	-webkit-transition: -webkit-transform 0.35s;
-	transition: transform 0.35s;
-	-webkit-transform: translate3d(0,200%,0);
-	transform: translate3d(0,200%,0);
-	visibility: visible;
-}
-
-.hovereffect p.icon-links a span:before {
-	display: inline-block;
-	padding: 8px 10px;
-	speak: none;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-
-.hovereffect:hover .overlay1,
-.hovereffect:hover h2,
-.hovereffect:hover p.icon-links a {
-	-webkit-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
-}
-
-.hovereffect:hover h2 {
-	-webkit-transition-delay: 0.05s;
-	transition-delay: 0.05s;
-}
-
-.hovereffect:hover p.icon-links a:nth-child(3) {
-	-webkit-transition-delay: 0.1s;
-	transition-delay: 0.1s;
-}
-
-.hovereffect:hover p.icon-links a:nth-child(2) {
-	-webkit-transition-delay: 0.15s;
-	transition-delay: 0.15s;
-}
-
-.hovereffect:hover p.icon-links a:first-child {
-	-webkit-transition-delay: 0.2s;
-	transition-delay: 0.2s;
-}
-/**/
-
 .col-padding {
 	padding-bottom: 20px;
 }
@@ -507,7 +422,7 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 	margin: 5px;
 	margin-top: 20px;
 	/*border: 1px solid black;*/
-	background-color: #4ba5dd;
+	/*background-color: #4ba5dd;*/
 	text-align: center;
 	cursor: pointer;
 	color: white;
@@ -524,7 +439,7 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 
 @media only screen and (max-width: 1600px) {
 	.pro-name { font-size: 14px; }
-	.right { display: block; float: none;}
+	/*.right { display: block; float: none !important;}*/
 }
 
 @media only screen and (max-width: 1000px) and (min-width: 700px) {
@@ -533,19 +448,25 @@ ul.brand-submenu li:not(.choosen-menu):hover {
 
 @media only screen and (max-width: 1000px) {
 	.menu-left { display: none; }
-	.placeholder-left { display: none; }
+	.menu-mid { display: none; }
+	.placeholder-left { display: none !important; }
 	.brand-product { margin:auto; }
 }
 
 @media only screen and (min-width: 1000px) {
 	.top-menu { display: none; }
 	.expand-menu { display: none !important; }
+	.menu-mid { display: block; }
 	.placeholder-left { display: block }
+}
+
+@media only screen and (max-width: 991px) {
+	.brand-info img { display: none; }
 }
 
 li.choosen-menu {
 	background-color: #dddddd;
-	border-left: 3px solid black;
+	/*border-left: 3px solid black;*/
 }
 
 li.choosen-menu a {
@@ -737,9 +658,15 @@ li.choosen-menu a {
 }
 
 .yellow {
-	background-color: #d58512 !important;
+	color: #d58512 !important;
 }
 
 .green {
-	background-color: #5cb85c !important;
+	color: #5cb85c !important;
 }
+
+.blue {
+	color: #4ba5dd !important;
+}
+
+
