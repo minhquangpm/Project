@@ -95,6 +95,21 @@ html, body {
 	background-position: center;
 }
 
+.bathroom-banner {
+	background-image: url('../image/bathtub/bathroom-banner.jpg');
+	background-position: center;
+}
+
+.office-banner {
+	background-image: url('../image/deskstaff/office-banner.jpg');
+	background-position: center;
+}
+
+.kitchen-banner {
+	background-image: url('../image/kitchen/kitchen-banner.jpg');
+	background-position: center;
+}
+
 .page-mapping {
 	height: 40px;
 	line-height: 40px;
