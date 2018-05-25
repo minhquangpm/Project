@@ -79,3 +79,11 @@ td{
 	width: 100%;
 	height: 250px;
 }
+.download{
+	border-style:solid;
+	border-color: #858a91;
+	width: height: 50px;
+	width: 250px;
+	background-color: #525760;
+	display: block;
+}
