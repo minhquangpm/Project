@@ -25,19 +25,19 @@ $(document).ready(function() {
             stickyNav();
       });
       $('.bathroom').click(function(){
-            window.location.href = 'https://www.google.com.vn';
+            window.location.href = 'components/brands/rooms/bathroom.html';
       });     
       $('.living-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
+            window.location.href = 'components/brands/rooms/living.html';
       });
       $('.dining-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
+            window.location.href = 'components/brands/rooms/kitchen.html';
       });
       $('.bed-room').click(function(){
-            window.location.href = 'https://www.google.com.vn';
+            window.location.href = 'components/brands/rooms/bedroom.html';
       });
       $('.office').click(function(){
-            window.location.href = 'https://www.google.com.vn';
+            window.location.href = 'components/brands/rooms/office.html';
       });     
       $('.fa-bars').click(function(){
             $('.sub-menu').toggleClass('active-menu');
