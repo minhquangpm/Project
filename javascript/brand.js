@@ -37,7 +37,7 @@ $(document).ready(function(){
             $('.' + this_class).removeClass('choosen-menu');
             $('[data-product=' + product + '][data-brand=' + brand + ']').parent('.col-12').css('display', 'none');
         }
-        if ($('.row').children(':hidden').length === 97) {
+        if ($('.row').children(':visible').length === 7) {
             $('.row').children().css('display', 'block');
         }
     }

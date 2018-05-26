@@ -28,12 +28,13 @@ $(document).ready(function(){
             $('.' + this_class).removeClass('choosen-menu');
             $('[data-product=' + product + ']').parent('.col-12').css('display', 'none');
         }
-        if ($('.row').children(':hidden').length === 50) {
+        if ($('.row').children(':visible').length === 7) { //don't fucking know why always 7 elements visible
             $('.row').children().css('display', 'block');
         }
     }
 
     $('.show-sofa').click(brand_do_the_magic);
     $('.show-table').click(brand_do_the_magic);
-
+    $('.show-cabinet').click(brand_do_the_magic);
+    $('.show-chair').click(brand_do_the_magic);
 });
