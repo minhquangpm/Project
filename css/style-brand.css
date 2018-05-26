@@ -3,7 +3,6 @@ html, body {
   height: 100%;
 }
 
-
 .pro-content {
 	/*width: 90%;*/
 	margin: auto;
@@ -96,17 +95,27 @@ html, body {
 }
 
 .bathroom-banner {
-	background-image: url('../image/bathtub/bathroom-banner.jpg');
+	background-image: url('../image/brands/bathroom-banner.jpg');
 	background-position: center;
 }
 
 .office-banner {
-	background-image: url('../image/deskstaff/office-banner.jpg');
+	background-image: url('../image/brands/office-banner.jpg');
 	background-position: center;
 }
 
 .kitchen-banner {
-	background-image: url('../image/kitchen/kitchen-banner.jpg');
+	background-image: url('../image/brands/kitchen-banner.jpg');
+	background-position: center;
+}
+
+.living-banner {
+	background-image: url('../image/brands/living-banner.jpg');
+	background-position: center;
+}
+
+.bedroom-banner {
+	background-image: url('../image/brands/bedroom-banner.jpg');
 	background-position: center;
 }
 
@@ -171,6 +180,7 @@ html, body {
 
 .brand-product {
 	display: table-cell !important;
+	padding-bottom: 400px;
 }
 
 .white {
@@ -226,7 +236,8 @@ html, body {
 
 .product-title-left {
 	padding: 10px;
-	text-align: center;
+	text-align: left;
+	padding-left: 30px;
 }
 
 .product-title-left,
@@ -272,6 +283,7 @@ ul.brand-submenu {
 
 ul.brand-submenu-left li {
 	padding: 10px;
+	cursor: pointer;
 }
 
 ul.brand-submenu li {
@@ -480,6 +492,7 @@ ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-le
 @media only screen and (max-width: 991px) {
 	.brand-info img { display: none; }
 }
+
 
 li.choosen-menu {
 	background-color: #dddddd;
