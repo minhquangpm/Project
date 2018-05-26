@@ -14,6 +14,10 @@ table, th, td {
 	font-color: #2c2c30;
 }
 
+a {
+	text-decoration: none !important;
+}
+
 td{
 	padding: 10px;
 }
@@ -25,12 +29,10 @@ td{
 	display: block;
 }
 .sptt{
-	 border-style:solid; 
-	 border-width:1px;
-	 border-color: #858a91;
-	 margin: 2px;
-	 width: 300px;
-	padding: 3px;
+	border-style:solid; 
+	border-width:1px;
+	border-color: #858a91;
+	padding: 10px;
 }
 .amh{
 	margin: 2px;
@@ -55,11 +57,11 @@ td{
 
 .ss1{
 	display: block;
-	 text-transform: uppercase;
-	 padding: 10px 0;
-	 border-bottom: 2px solid #ccc;
-	 position: relative;
-	 /*margin-bottom:15px;*/
+	text-transform: uppercase;
+	padding: 10px 0;
+	border-bottom: 2px solid #ccc;
+	position: relative;
+	margin: auto;
 }
 * {
     box-sizing: border-box;
@@ -120,6 +122,8 @@ td{
 	animation: fadein 2s;
 }
 
+
+/* quang css updated */
 .choosen-img:after {
 	content: "";
 	position: absolute;
@@ -173,4 +177,59 @@ td{
 @keyframes fadein {
     from { opacity: 0; }
     to   { opacity: 1; }
+}
+
+
+.green-bg {
+	background-color: #5cb85c !important;
+}
+
+.blue-bg {
+	background-color: #4ba5dd !important;
+}
+
+.green-bg a, .blue-bg a {
+	color: white !important;
+}
+
+.display-btn {
+	padding-top: 50px;
+	/*padding-bottom: 50px;*/
+}
+
+.pro-img-frame {
+	width: 370px;
+	width: 100%;
+	max-height: 210px;
+	min-height: auto;
+	position: relative;
+	display: block;
+	margin: auto;
+}
+
+.col-padding {
+	padding-bottom: 20px;
+}
+
+.pro-name {
+	/*height: 20px;*/
+	font-size: 14px;
+	font-family: 'Montserrat';
+	font-weight: 600;
+	/*font-size: 17px;*/
+	padding: 10px;
+	position: relative;
+	letter-spacing: -.3px;
+}
+
+.yellow {
+	color: #d58512 !important;
+}
+
+.green {
+	color: #5cb85c !important;
+}
+
+.blue {
+	color: #4ba5dd !important;
 }
