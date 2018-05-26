@@ -432,9 +432,21 @@ body{
 	margin-right: auto;
 	margin-left: auto;
 }
+.img-brands{
+	display: block;
+	height: 400px;
+	width: 400px;	
+	margin-right: auto;
+	margin-left: auto;
+	padding: 20px 0;
+}
 .image-about{
 	height: auto;
 	width: 100%;
+}
+.seeallbrands{
+	display: block;
+	margin: auto;
 }
 .gachngang{
 	display: block;
