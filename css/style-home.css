@@ -24,9 +24,17 @@ body{
 	padding: 0 20px;
 }
 .bag-item.show-bag{
-	display: none;
+	display: block;
+	top: 60px;
+	right: 0;
+	position: absolute;
+	z-index: 10000;
 }
-.bag-item a i{
+.bag-item.show-bag a i{
+	color: #999999;
+	line-height: 50px;
+}
+.bag-item.fix-bag a i{
 	color: #999999;
 	line-height: 60px;
 }
