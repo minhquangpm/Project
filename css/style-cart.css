@@ -1,0 +1,107 @@
+.content {
+	padding-bottom: 200px;
+}
+
+.display-cart-items {
+	padding-top: 50px;
+	overflow-y: auto;
+}
+
+table {
+	width: 100%;
+}
+
+
+tr {
+	border: 1px solid black;
+}
+
+td, th {
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-left: 100px;
+}
+
+.pay-btn {
+	/*float: right;*/
+	height: 100px;
+	line-height: 100px;
+	vertical-align: middle;
+	text-align: center;
+}
+
+.pay-btn button {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.resize-img {
+	width: 330px;
+	height: auto;
+}
+
+
+
+
+
+/* ----------------------------------------------------------------------------------------------- */
+/* copy from brand.css*/
+.blank-space-top {
+	height: 80px;
+}
+
+.page-mapping {
+	height: 40px;
+	line-height: 40px;
+	background-color: white;
+	/*border: 1px solid black;*/
+}
+
+.page-mapping ol {
+	list-style-type: none;
+	padding-left: 15px;
+}
+
+.page-mapping ol li {
+	display: inline;
+}
+
+.page-mapping ol li a {
+	font-family: 'Montserrat';
+	font-size: 12px;
+	padding-right: 5px;
+	vertical-align: middle;
+	color: black;
+	text-decoration: none;
+}
+
+.product-title-banner {
+	height: 70px;
+	width: 100%;
+	line-height: 70px;
+	padding-left: 15px;
+	background-color: #f7f7f7;
+}
+
+.product-title-banner p {
+	/*font-family: 'Montserrat';*/
+	font-weight: 700;
+	font-size: 30px;
+	letter-spacing: -.3px;
+	vertical-align: middle;
+}
+
+.green-bg {
+	background-color: #5cb85c !important;
+	color: white;
+}
+
+.blue-bg {
+	background-color: #4ba5dd !important;
+	color: white;
+}
+
+.red-bg {
+	background-color: #c44256;
+	color: white;
+}

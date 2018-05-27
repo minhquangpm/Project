@@ -15,6 +15,9 @@ body{
 	width: 100%;
 }
                                                   /*header*/
+
+
+/* add to cart btn*/
 .bag-item {
 	float: right;
 }
@@ -33,6 +36,53 @@ body{
 .bag-item a:hover {
 	background: #d41f36;
 }
+
+.bag-item span {
+  /* number of items added to the cart */
+  font-family: 'Montserrat';
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  height: 18px;
+  width: 18px;
+  line-height: 18px;
+  background-color: #46b29d;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: bold;
+  text-align: center;
+  border-radius: 50%;
+  /* scale it down if no products have been added to the cart */
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  -webkit-transition: -webkit-transform 0.2s 0s;
+  -moz-transition: -moz-transform 0.2s 0s;
+  transition: transform 0.2s 0s;
+}
+
+.bag-item.items-added span {
+  /* counter visible when a product is added to the cart */
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+}
+
+@media only screen and (min-width: 1100px) {
+  .bag-item {
+    position: fixed;
+    top: 30px;
+    right: 30px;
+  }
+}
+/* add to cart btn*/
+
+
+
 .banner {
 	background: #444444;
 	height: 60px;
