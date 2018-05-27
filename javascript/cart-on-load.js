@@ -35,6 +35,6 @@ $(function() {
 	});
 
 	$('.back-shop').click(function() {
-		window.location.reload();
+		window.history.back();
 	})
 })

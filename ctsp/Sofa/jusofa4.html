@@ -15,6 +15,7 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style-brand-hover-effect.css">
 	<script src="../../javascript/header.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script src="../../javascript/ctsp.js"></script>
+	<script src="../../javascript/add-to-cart.js"></script>
 
 </head>
 <body>
@@ -24,8 +25,9 @@
 				<a href="../../home.html">DURABLE</a>				
 			</div>
 			<div class="bag-item show-bag">
-				<a href="">
-					<i class="fa fa-shopping-bag"></i>
+				<a href="../../components/addtocart.html">
+					<i class="fa fa-shopping-cart"></i>
+					<span>0</span>
 				</a>
 			</div>
 		</div>
@@ -78,16 +80,14 @@
 			<div class="col-lg-8" class="ss2">
 				<div class="ss4">
 					<!-- <div class="testss"> -->
-						<img id="expandedImg"  src="../../image/jupiter/sofas/4.jpg">
+						<img id="expandedImg"  src="../../image/jupiter/sofas/4.1.jpg">
 					<!-- </div> -->
 				</div>
 				<div class="r">
 				  	<div class="column choosen-img">
-				    	<img src="../../image/jupiter/sofas/4.jpg">
-				  	</div>
-				  	<div class="column">
 				    	<img src="../../image/jupiter/sofas/4.1.jpg">
-				 	</div>
+				  	</div>
+				
 				  	<div class="column">
 				    	<img src="../../image/jupiter/sofas/4.2.jpg">
 				  	</div>
@@ -163,9 +163,10 @@
 						</td>
 					</tr>
 				</table>
-				<div class="display-btn">
-					<button class="btn green-bg">
-						<a href=""><i class="icon-navbar fa fa-cart-plus"></i>Add to cart</a>
+				<div class="display-btn pro-item" data-title="Sofa Jupiter 4" data-id="jusofa4" data-size="230x120x90" data-cover="leather" data-color="black" data-price="7500vnd">
+					<button class="btn green-bg addToCart">
+						<img class="pro-img-frame" src="../../image/jupiter/sofas/4.jpg">
+						<a href="javascript:void(0)"><i class="icon-navbar fa fa-cart-plus"></i>Add to cart</a>
 					</button>
 					<button class="btn blue-bg">
 						<a href="../../download/bed/tc1102.docx" download="tc1102">
