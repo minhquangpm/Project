@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html> -->
 <html>
 <head>
 	<title>Mercury Bed 1</title>
@@ -6,15 +6,17 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="../../css/style-home.css">
 	<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
-	<link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 	<link rel="stylesheet" type="text/css" href="../../css/ctsp.css">
 	<link rel="stylesheet" type="text/css" href="../../css/style-brand-hover-effect.css">
-	<script src="../../javascript/header.js"></script><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+	<script src="../../javascript/header.js"></script>
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 	<script src="../../javascript/ctsp.js"></script>
+	<script src="../../javascript/add-to-cart.js"></script>
 
 </head>
 <body>
@@ -24,8 +26,9 @@
 				<a href="../../home.html">DURABLE</a>				
 			</div>
 			<div class="bag-item show-bag">
-				<a href="">
-					<i class="fa fa-shopping-bag"></i>
+				<a href="../../components/addtocart.html">
+					<i class="fa fa-shopping-cart"></i>
+					<span>0</span>
 				</a>
 			</div>
 		</div>
@@ -54,10 +57,17 @@
 					<a class="catalogue" href="../../components/brands/rooms/office.html"><i class="icon-navbar fa fa-desktop"></i>Office</a>
 				</li>	
 				<li>
-					<a class="catalogue" href="../../components/brands/rooms/kitchen.html"><i class="icon-navbar fa fa-cutlery"></i>Kitchen</a>
+					<a class="catalogue" href="../../components/brands/rooms/kitchen.html"><i class="icon-navbar fa fa-utensils"></i>Kitchen</a>
 				</li>
 				<li>
 					<a class="catalogue" href="../../components/brands/rooms/bathroom.html"><i class="icon-navbar fa fa-bath"></i>Bathroom</a>
+				</li>
+				<li class="brand-dropdown-1">
+					<span class="catalogue"><i class="icon-navbar far fa-address-card"></i>About Us</span>
+					<ul class="drop-menu-1">
+						<li><a href="../../about-me.html">Our Story</a></li>
+						<li><a href="../../contact-us.html">Contact Us</a></li>
+					</ul>
 				</li>						
 			</ul>			
 		</div>					
@@ -163,9 +173,10 @@
 						</td>
 					</tr>
 				</table>
-				<div class="display-btn">
-					<button class="btn green-bg">
-						<a href=""><i class="icon-navbar fa fa-cart-plus"></i>Add to cart</a>
+				<div class="display-btn pro-item" data-title="Bed Mercury 1" data-id="merbed1" data-size="250x150x90" data-cover="polyester fibre" data-color="white" data-price="2000 vnd">
+					<button class="btn green-bg addToCart">
+						<img class="pro-img-frame" src="../../image/mercury/beds/1.jpg">
+						<a href="javascript:void(0)"><i class="icon-navbar fa fa-cart-plus"></i>Add to cart</a>
 					</button>
 					<button class="btn blue-bg">
 						<a href="../../download/bed/tc1102.docx" download="tc1102">
