@@ -35,11 +35,28 @@ td, th {
 	padding-right: 20px;
 }
 
+.pay-btn .blue-bg {
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
 .resize-img {
 	width: 330px;
 	height: auto;
 }
 
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+/*.back-shop {
+	margin-top: 30px;
+	margin-left: 30px;
+}*/
 
 
 
@@ -102,6 +119,11 @@ td, th {
 }
 
 .red-bg {
-	background-color: #c44256;
+	background-color: #c44256 !important;
+	color: white;
+}
+
+.yellow-bg {
+	background-color: #d58512 !important;
 	color: white;
 }

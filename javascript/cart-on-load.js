@@ -15,7 +15,7 @@ $(function() {
 	    	+ '<td>' + count + '</td>'
 	    	+ '<td>' + price * count + 'vnd</td>'
 	    	// + '<td><button class="btn">Pay</button></td>'
-	    	+ '<td><button id="' + key + '" class="btn red-bg removeCartItem">Remove</button></td>'
+	    	+ '<td><button id="' + key + '" class="btn red-bg removeCartItem">Discard</button></td>'
 	    	+ '</tr>')
 	});
 
@@ -32,6 +32,11 @@ $(function() {
 			localStorage.setItem('cart', pCart);
 		};
 		$(this).parents('tr').remove();
+	});
+
+	$('.removeAllCart').click(function() {
+		$('.append-cart').children('tr').remove();
+		localStorage.clear();
 	});
 
 	$('.back-shop').click(function() {
