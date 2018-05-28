@@ -4,11 +4,12 @@ html, body {
 }
 
 .content {
-	padding-bottom: 100px;
+	/*padding-bottom: 100px;*/
 }
 
 .pro-content {
-	/*width: 90%;*/
+	padding-top: 50px;
+	width: 90%;
 	margin: auto;
 	display: table;
 }
@@ -184,7 +185,7 @@ html, body {
 
 .brand-product {
 	display: table-cell !important;
-	padding-bottom: 400px;
+	padding-bottom: 200px;
 }
 
 .white {
@@ -372,76 +373,10 @@ ul.brand-submenu li:not(.choosen-menu):not(.product-title):not(.product-title-le
 	margin: auto;
 }
 
-.underline-hover {
-	/*max-width: 100%;*/
-	/*outline: 1px solid #dbdbdb;*/
-	/*border: 2px solid transparent;*/
+.row-padding {
+	padding-bottom: 100px;
+	padding-top: 50px;
 }
-
-.underline-hover2 {
-	/*max-width: 100%;*/
-	/*outline: 1px solid transparent;*/
-	/*border: 2px solid transparent;*/
-}
-
-.col-12:hover .underline-hover2,
-.col-12:hover .underline-hover {
-	/*outline: 1px solid transparent;*/
- 	/*border-left: 2px solid black;*/
- 	/*border-right: 2px solid black;*/
- 	/*border-top: 2px solid black;*/
- 	/*border-bottom: 1px solid black;*/
-}
-
-/*.pro-title-2 {
-	top: 0;
-	width: 100%;
-	max-height: auto;
-	padding-left: 10px;
-	padding-right: 10px;
-	padding-bottom: 10px;
-	max-height: 0;
-	z-index: 0;
-	visibility: hidden;
-	overflow: hidden;
-  	position: absolute;
- 	background-color: white;
- 	border-left: 2px solid black;
- 	border-right: 2px solid black;
- 	border-bottom: 2px solid black;
-	
-	-webkit-transition: max-height 0.7s ;
-	-moz-transition: max-height 0.7s ;
-	transition: max-height 0.7s ;
-}*/
-
-/*.col-12:hover .pro-title-2 {
-	max-height: 200%;
-	z-index: 6;
-	visibility: visible;
-}*/
-
-/*.pro-title-2 ul {
-	list-style-type: none;
-}*/
-
-/*.pro-title-2 li {
-	margin-top: 5px;
-	font-family: 'Montserrat';
-}*/
-
-/*.pro-title-2 li span {
-	margin-left: 10px;
-}*/
-
-/*.pro-title-2 li span a {
-	text-decoration: none;
-	width: 100%;
-	height: 100%;
-	display: inline-block;
-	text-align: center;
-	color: white;
-}*/
 
 .col-padding {
 	padding-bottom: 20px;

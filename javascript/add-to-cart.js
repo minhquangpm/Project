@@ -11,7 +11,7 @@ $(function() {
 		if (localStorage.getItem('cart')) {
 			var pCart = JSON.parse(localStorage.getItem('cart'));
 			if (pCart && pCart[pID]) {
-				pCount = pCart[pID].count + pCount;
+				pCount = pCart[pID].count + 1;
 				// console.log(pID);
 				var pData = {[pID]: {"title": pTitle, "price": pPrice, "image": pImage, "count": pCount}};
 				// extend pData to pCart
