@@ -470,7 +470,7 @@ li.choosen-menu a {
 	padding-top: 10px;
 }
 
-.expand-menu li a {
+.expand-menu li {
 	padding-left: 5%;
 	display: inline-block;
     width: 100%;
@@ -479,9 +479,6 @@ li.choosen-menu a {
     color: black;
 }
 
-.expand-menu .ml-hide li {
-	padding-left: 10%;
-}
 
 .right {
 	float: right;
